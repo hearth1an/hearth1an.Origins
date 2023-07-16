@@ -1,0 +1,39 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "name": "Player",
+
+    "Volumes": {
+        "creditsVolume": [
+            {
+                "deathType": "default",
+                "creditsType": "fast",
+                "gameOverText": "ENDING_TEXT",
+                "radius": 10,
+                "isRelativeToParent": true,
+                "position": {
+                    "y": -100
+                },
+                "rename": "Ending_Trigger"
+            }
+        ]       
+    },
+    "Props": {
+        "details": [
+            {
+                "assetBundle": "planets/Assets/cave_dimension_assets",
+                "path": "Assets/Prefabs/DistortionSphere.prefab",
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": 5
+               
+            }
+        ]
+    },
+
+
+    "removeChildren": [ "Ending_Trigger","DistortionSphere" ]
+        
+}

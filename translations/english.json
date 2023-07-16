@@ -1,0 +1,31 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+	"DialogueDictionary": {
+
+	
+	},
+
+	"UIDictionary": {
+
+		"FIRE_VASE_ITEM": "Ceremony vase",
+		"HEART_ITEM": "Dark Bramble Heart",
+		"HORNET_INTERACTION": "Gather flame",
+
+		"FIRST_INTERACTION": "WHO ARE YOU",
+		"SECOND_INTERACTION": "FIND THE CORE",
+		"THIRD_INTERACTION": "COLLECT THE ESSENCE",
+		"FOURTH_INTERACTION": "NOW ENTER",
+		"FIFTH_INTERACTION": "I AM HERE",
+		"SIXTH_INTERACTION": "GOOD LUCK",
+
+		"ENDING_TEXT": "THE END",
+
+		"SYSTEM_RESTORED": "<![CDATA[<color=green>SYSTEM INTEGRITY RESTORED</color>]]>",
+		"SYSTEM_ERROR": "<![CDATA[<color=red>FATAL ERROR</color>]]>"
+
+	},
+	"ShipLogDictionary": {
+
+	}
+
+}

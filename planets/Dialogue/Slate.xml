@@ -1,0 +1,90 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Slate</NameField>
+
+	<DialogueNode>
+		<Name>Start</Name>		
+		<EntryCondition>DEFAULT</EntryCondition>		
+		<Dialogue>
+			<Page>Heyo hatchling! What's up?</Page>			
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+			    <CancelledPersistentCondition>ENTRY_DISCOVERED</CancelledPersistentCondition>
+				<Text>What's going on, why you here?</Text>
+				<DialogueTarget>START_QUESTION_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+			<RequiredPersistentCondition>ENTRY_DISCOVERED</RequiredPersistentCondition>	
+				<Text>What's new, Slate?</Text>
+				<DialogueTarget>START_QUESTION_2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>START_QUESTION_1</Name>
+		<EntryCondition></EntryCondition>
+		<Dialogue>			
+			<Page>Good question! We detected a new, strange signal somewhere in the Dark Bramble's orbit.</Page>
+			<Page>By saying "detected," I mean we detected it once aaaand it's gone! Very strange, huh? Why don't you fly over and take a look around?</Page>		
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>				
+				<Text>Sure! Why not.</Text>
+				<DialogueTarget>START_QUESTION_1.1</DialogueTarget>
+				<ConditionToSet>START_ENTRY_2</ConditionToSet>
+			</DialogueOption>			
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START_QUESTION_1.1</Name>
+		<EntryCondition></EntryCondition>
+		<Dialogue>			
+			<Page>Perfect. Maybe we will finally find out why it's always disappearing.</Page>		
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>				
+				<Text>Bye!</Text>				
+			</DialogueOption>			
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START_ENTRY_2</Name>
+		<EntryCondition>START_ENTRY_2</EntryCondition>
+		<Dialogue>			
+			<Page>Good luck, keep your ship safe.</Page>		
+		</Dialogue>	
+	</DialogueNode>
+
+	
+
+	<DialogueNode>
+		<Name>START_QUESTION_2</Name>
+		<Dialogue>
+			<Page>You will never believe me! Dark Bramble becomes BLUE!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>				
+				<Text>Wow, this is unbelievable! I have to fly there and uncover all the secrets! <![CDATA[<size=20>]]>Perhaps it's blue because I know the frequency of the signal...<![CDATA[</size>]]></Text>
+				<DialogueTarget>START_QUESTION_2.1</DialogueTarget>
+				<ConditionToSet>START_ENTRY_2</ConditionToSet>
+			</DialogueOption>			
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START_QUESTION_2.1</Name>		
+		<Dialogue>
+			<Page>What?</Page>			
+			</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>				
+				<Text>Ah, nothing! Nevermind. See ya!</Text>
+				<DialogueTarget>START_ENTRY_2</DialogueTarget>
+			</DialogueOption>			
+		</DialogueOptionsList>
+	</DialogueNode>
+</DialogueTree>

@@ -1,0 +1,59 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "QuantumMoon",
+	"Base": {
+		"gravityFallOff": "linear"
+	},
+	"Bramble": {
+		"nodes": [
+			{
+				"scale": 3.0,
+				"linksTo": "EnteranceDimension",
+				"name": "Node_QM",
+				"isSeed": true,
+				"fogTint": {
+					"r": 83,
+					"g": 129,
+					"b": 255,
+					"a": 0
+				},
+				"lightTint": {
+					"r": 83,
+					"g": 129,
+					"b": 255,
+					"a": 0
+				},
+				"rotation": {
+					"x": 341.67
+				},
+				"position": {
+					"x": 8.03,
+					"y": 91.3,
+					"z": 19.6
+				},
+				"parentPath": "Sector_QuantumMoon/State_DB/Interactables_DBState",
+				"isRelativeToParent": true
+			}
+		]
+	},
+	"Orbit": {},
+	"Props": {
+		"signals": [
+			{
+				"detectionRadius": 50000,
+				"frequency": "Corrupted Frequency",
+				"identificationRadius": 40.0,
+				"name": "Corrupted Signal",
+				"audio": "planets/Content/Audio/Signal.mp3",
+				"maxDistance": 30.0,
+				"position": {},
+				"parentPath": "Sector_QuantumMoon/State_DB/Interactables_DBState/Node_QM",
+				"isRelativeToParent": true,
+				"rename": "Escape_Pod_QM"
+			}
+		]
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {},
+	"ShockEffect": {}
+}

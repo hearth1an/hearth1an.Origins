@@ -1,0 +1,59 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "DARK_BRAMBLE",
+	"removeChildren": [],
+	"Base": {
+		"gravityFallOff": "linear"
+	},
+	"Bramble": {
+		"nodes": [
+			{
+				"linksTo": "EnteranceDimension",
+				"name": "To_Enterance_Node",
+				"fogTint": {
+					"r": 83,
+					"g": 129,
+					"b": 255,
+					"a": 255
+				},
+				"lightTint": {
+					"r": 83,
+					"g": 129,
+					"b": 255,
+					"a": 255
+				},
+
+				"rotation": {
+					"y": 0,
+					"z": 0
+				},
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},				
+				"scale": 3
+			}
+		]
+	},
+	"Orbit": {},
+	"Props": {
+		"signals": [
+			{
+				"detectionRadius": 500,
+				"frequency": "Corrupted Frequency",
+				"identificationRadius": 40.0,
+				"name": "Corrupted Signal",
+				"audio": "planets/Content/Audio/Signal.mp3",
+				"maxDistance": 30.0,
+				"position": {},
+				"parentPath": "Sector_DB/To_Enterance_Node",
+				"isRelativeToParent": true,
+				"rename": "Escape_Pod_DB"
+			}
+		]
+	},
+	"ReferenceFrame": {},
+	"ShipLog": {},
+	"ShockEffect": {}
+}

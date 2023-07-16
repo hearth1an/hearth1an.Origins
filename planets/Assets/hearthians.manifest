@@ -1,0 +1,91 @@
+ManifestFileVersion: 0
+CRC: 2758579575
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cbbabb3e851b63e7474d44cfb47fd83b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 920c0a0da43f9e1e7cbd5d7a636a571b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 64960e60016b9174392f7e903dd3f38e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1dcbefa0a1fd4004cbf5a5e8f20d7fc0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c365a3339115df1479973f6308e88a47, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6852cf345d89f5f4583e26776c10f794, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 840ab63696e59254eb425242136805dd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f759dc47c386fa945981cf08c8c961a0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ed8fc5f762e145548bdf96e593ba30a2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6e08224a0c172cf49b787f8bc8d72094, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0697417d0b4243b48a036bfb10342726, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 034b758dcb27c9746a7640cdb345b333, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0afb808ebdc9697409339cb1d53688b5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 61b00a8e76a237e429174e8bc253901f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b50c672f97fb3b049ad7fff6b7351f33, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 60afcc5fcade5cb4f885bccccccff091, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/Villager_HEA_Hal_Outside.prefab
+- Assets/Prefabs/Villager_HEA_Slate.prefab
+- Assets/Prefabs/Signal_Nomai.prefab
+- Assets/Prefabs/Props_HEA_NomaiCable.prefab
+- Assets/Prefabs/Beast_Anglerfish.prefab
+- Assets/Prefabs/Signal_Prisoner.prefab
+Dependencies:
+- E:/Outer Wilds modding/Template x2/TEMPLATE3/darkbramble/meshes/characters
+- E:/Outer Wilds modding/Template x2/TEMPLATE3/darkbramble/textures/anglerfish
+- E:/Outer Wilds modding/Template x2/TEMPLATE3/timberhearth/meshes/characters
+- E:/Outer Wilds modding/Template x2/TEMPLATE3/timberhearth/meshes/props
+- E:/Outer Wilds modding/Template x2/TEMPLATE3/timberhearth/textures/villagers

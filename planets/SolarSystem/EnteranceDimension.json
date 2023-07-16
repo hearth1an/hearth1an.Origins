@@ -1,0 +1,260 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "EnteranceDimension",
+	"canShowOnTitle": false,
+	"Base": {
+
+	},
+	"Bramble": {
+		"dimension": {
+			"fogTint": {
+				"r": 83,
+				"g": 129,
+				"b": 255,
+				"a": 255
+			},
+			"fogDensity": 3.0,
+			"linksTo": "EnteranceLoop_Node",
+			"radius": 450.0,
+			"vinePrefab": "hub"
+		},
+		"nodes": [
+			{
+				"linksTo": "DarkNestDimension",
+				"name": "To_DarkNest",
+				"fogTint": {
+					"r": 60,
+					"g": 0,
+					"b": 0,
+					"a": 255
+				},
+				"lightTint": {
+					"r": 60,
+					"g": 0,
+					"b": 0,
+					"a": 255
+				},
+				"hasFogLight": true,
+				"position": {
+					"x": 27.6723,
+					"y": -632.1356,
+					"z": 35.4008
+				},
+				"rotation": {
+					"x": 89.9011,
+					"y": 5.2135,
+					"z": 0
+				},
+				"scale": 1.3
+			},
+			{
+				"linksTo": "EnteranceDimension",
+				"name": "EnteranceLoop_Node",
+				"fogTint": {
+					"r": 83,
+					"g": 129,
+					"b": 255,
+					"a": 0
+				},
+				"lightTint": {
+					"r": 83,
+					"g": 129,
+					"b": 255,
+					"a": 0
+				},
+				"hasFogLight": true,
+				"rotation": {
+					"x": 65.2428,
+					"y": -137.305,
+					"z": 198.1078
+				},
+				"position": {
+					"z": -198.0
+				}
+			}
+		]
+	},
+	"Orbit": {
+		"staticPosition": {
+			"x": 32000.0,
+			"y": 32000.0,
+			"z": 32000.0
+		},
+		"isStatic": true
+
+	},
+	"Props": {
+		"details": [
+			{
+				"path": "DB_EscapePodDimension_Body/Sector_EscapePodDimension/Sector_EscapePodBody/Geometry_EscapePodBody",
+				"keepLoaded": true,
+				"position": {
+					"x": -198.0026,
+					"y": -149.997559,
+					"z": -12.5398188
+				},
+				"rotation": {
+					"x": 339.377869,
+					"y": 171.632553,
+					"z": 313.955566
+				},
+				"alignRadial": false,
+
+				"rename": "EscapePod"
+			},			
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/DistressBeaconTransmitter",
+				"parentPath": "Sector/EscapePod",
+				"isRelativeToParent": true,
+				"rename": "Transmitter",
+				"position": {
+					"x": 0.2697,
+					"y": -6.4655,
+					"z": -26.84
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_BH/Structure_NOM_escapePod_Cable_BH",
+				"parentPath": "Sector/EscapePod/Transmitter",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 5.9818,
+					"y": 36.5054,
+					"z": 27.5641
+				},
+				"rotation": {
+					"x": 270.074,
+					"y": 0,
+					"z": 0
+				},
+				"rename": "TransmitterCable",
+				"stretch": {
+					"x": 0.1,
+					"y": 0.4,
+					"z": 0.1
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Effects_CrashFragment/LightBeam",
+				"parentPath": "Sector/EscapePod/Transmitter",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"rename": "LightBeam"
+			}
+
+		],
+		"signals": [
+
+			{
+				"detectionRadius": 50.0,
+				"frequency": "Nomai Transmitter",
+				"identificationRadius": 5.0,
+				"name": "Escape Pod",
+				"onlyAudibleToScope": false,
+				"audio": "planets/Content/Audio/Signal.mp3",
+				"parentPath": "Sector/EscapePod/Transmitter",
+				"isRelativeToParent": true,
+				"maxDistance": 30.0,
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"rename": "Escape_Pod_Signal"
+			}			
+		],
+		"translatorText": [
+			{
+				"position": {
+					"x": -201.6015,
+					"y": -155.9348,
+					"z": -2.1048
+				},
+				"rotation": {
+					"x": 60,
+					"y": 55.6,
+					"z": 30
+
+				},
+				"xmlFile": "planets/Text/Recorder_EscapePod.xml",
+				"type": "preCrashRecorder",
+				"rename": "Recorder_EscapePod"
+			},
+			{
+				"position": {
+					"x": -198.4013,
+					"y": -155.5513,
+					"z": -0.9793
+				},
+				"rotation": {
+					"x": 311.4028,
+					"y": 95.3349,
+					"z": 0
+
+				},
+				"xmlFile": "planets/Text/Computer_EscapePod.xml",
+				"type": "preCrashComputer",
+				"rename": "Computer_EscapePod"
+			},
+			{
+				"position": {
+					"x": -62.168,
+					"y": -449.0264,
+					"z": -16.3455
+				},
+				"rotation": {
+					"x": 290.2473,
+					"y": 277.0108,
+					"z": 107
+
+				},
+				"xmlFile": "planets/Text/Recorder_EnteranceNode.xml",
+				"type": "preCrashRecorder",
+				"rename": "Recorder_EnteranceNode"
+			}
+		]
+
+
+	},
+	"Lava": {
+		"size": 50,
+		"tint": {
+			"r": 70,
+			"g": 0,
+			"b": 0,
+			"a": 255
+		}
+		
+
+	},
+	"Volumes": {
+
+		"audioVolumes": [
+			{
+				"audio": "planets/Content/Audio/NomaiTheme.mp3",
+				"clipSelection": "random",
+				"track": "music",
+				"volume": 1,
+				"priority": 3,
+				"radius": 600.0,
+				"loop": true
+
+			}
+		]
+	},
+	"removeChildren": [ "Sector/EscapePod/Transmitter/Signal_EscapePod" ]
+}

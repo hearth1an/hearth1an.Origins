@@ -1,0 +1,186 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Neer</NameField>
+
+	<DialogueNode>
+		<Name>Start</Name>		
+		<EntryCondition>DEFAULT</EntryCondition>		
+		<Dialogue>
+			<Page>We finally met.</Page>
+			<Page>I know you have questions, and I have answers. Ask away.</Page>		
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Who are you? What is this place?</Text>
+				<DialogueTarget>START_QUESTION_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Neer? How do I know your name? How are we communicating? Do you understand my language?</Text>
+				<DialogueTarget>START_QUESTION_2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>START_QUESTION_1</Name>
+		<EntryCondition></EntryCondition>
+		<Dialogue>			
+			<Page>My name is Neer. I am a representative of the Xa'Ri race from the Tri-Star system. I'm likely the last remaining member of our race.</Page>
+			<Page>We are at the origins, where it all began, at the core of our experiment in manipulating space. I assume you can perceive that the experiment did not achieve success...</Page>		
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>				
+				<Text>So, Dark Bramble is your doing? Why did you create it?</Text>
+				<DialogueTarget>START_QUESTION_1.1</DialogueTarget>
+				<ConditionToSet>START_QUESTION_1_DONE</ConditionToSet>
+			</DialogueOption>			
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START_QUESTION_1.1</Name>
+		<EntryCondition></EntryCondition>
+		<Dialogue>
+			<Page>It was intended to allow us to control space: to make the small large, to traverse colossal distances in negligible time... But it was all a horrible mistake.</Page>
+			<Page>By imbuing the Bramble, as you call it, with the necessary power, we could barely control it. Our planet, neighboring planets, and who knows how many more planets were destroyed either immediately or gradually.</Page>
+			<Page> I have no idea how far Bramble has spread, but I anticipated that it would happen.</Page>		
+		</Dialogue>
+		<DialogueOptionsList>
+		<DialogueOption>
+				<RequiredCondition>START_QUESTION_2_DONE</RequiredCondition>		
+				<Text>And now we here...</Text>
+				<DialogueTarget>START_3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<CancelledCondition>START_QUESTION_2_DONE</CancelledCondition>
+				<Text>I see...</Text>
+				<DialogueTarget>START_2</DialogueTarget>
+			</DialogueOption>			
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START_QUESTION_2</Name>
+		<Dialogue>
+			<Page>You knew my name all this time. I can sense your consciousness and transmit thoughts and words directly to it, excluding physical contact. I sensed you almost immediately when you came close enough.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>				
+				<Text>What about the Nomai?</Text>
+				<DialogueTarget>START_QUESTION_2.1</DialogueTarget>
+				<ConditionToSet>START_QUESTION_2_DONE</ConditionToSet>
+			</DialogueOption>			
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START_QUESTION_2.1</Name>
+		<EntryCondition></EntryCondition>
+		<Dialogue>
+			<Page>Their consciousness structure was completely different, but they were likely either depleted or lacked your experience. I'm afraid they couldn't reach this place and perished.</Page>			
+			</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>				
+				<Text>I saw... they perished at the hands of the creature whose core I entered...</Text>
+				<DialogueTarget>START_QUESTION_2.2</DialogueTarget>
+			</DialogueOption>			
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START_QUESTION_2.2</Name>
+		<EntryCondition></EntryCondition>
+		<Dialogue>
+			<Page>That creature is an isolated, personal structural organization of the Bramble. It created it itself and uses it to extract an unknown, dark substance - the essence. It also sensed you, which is why I asked you to collect the essence, so that it could adapt to your presence and allow you inside, here.</Page>		
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<RequiredCondition>START_QUESTION_1_DONE</RequiredCondition>		
+				<Text>And now we here...</Text>
+				<DialogueTarget>START_3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<CancelledCondition>START_QUESTION_1_DONE</CancelledCondition>		
+				<Text>I see...</Text>
+				<DialogueTarget>START_2</DialogueTarget>
+			</DialogueOption>			
+		</DialogueOptionsList>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>START_2</Name>		
+		<EntryCondition>START_2</EntryCondition>		
+		<Dialogue>			
+			<Page>Before we continue... do you have any more questions?</Page>		
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+			<CancelledCondition>START_QUESTION_1_DONE</CancelledCondition>
+				<Text>Who are you? What is this place?</Text>
+				<DialogueTarget>START_QUESTION_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+			<CancelledCondition>START_QUESTION_2_DONE</CancelledCondition>
+				<Text>Neer? How do I know your name? How are we communicating? Do you understand my language?</Text>
+				<DialogueTarget>START_QUESTION_2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START_3</Name>
+		<Dialogue>			
+		<Page>Now that you know everything, I'm ready to tell you why we are here and what all of this is for.</Page>		
+		<Page>Do you see the structure above? That's <![CDATA[<color=yellow>the "Heart"</color>]]> - the main mechanism without which the Bramble cannot exist.</Page>
+		<Page>I want to offer you the chance to save dozens, hundreds, even thousands of worlds. Take the "Heart" and return to where you came from. You can do it.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>			
+				<Text>But it's gigantic! I can't lift it! What about you?</Text>
+				<DialogueTarget>START_3.1</DialogueTarget>
+			</DialogueOption>	
+		</DialogueOptionsList>		
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START_3.1</Name>
+		<Dialogue>			
+		<Page>I have remained here all this time for this moment. I won't be able to leave the Bramble, but you can. </Page>		
+		<Page>Fortunately, I still have control over the seeds I personally nurtured. Speaking of the experiments on space, we have achieved some degree of success.</Page>		
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>			
+				<Text>What do I have to do?</Text>
+				<DialogueTarget>START_3.2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>		
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START_3.2</Name>
+		<Dialogue>			
+		<Page>I will open a portal that, once you enter, will allow you to dispose of <![CDATA[<color=yellow>the "Heart"</color>]]> once and for all.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>			
+				<Text>What will happen afterward?</Text>
+				<DialogueTarget>START_3.3</DialogueTarget>
+		</DialogueOption>
+		</DialogueOptionsList>		
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START_3.3</Name>
+		<Dialogue>			
+		<Page>I don't know. <![CDATA[<color=yellow>The "Heart"</color>]]> provides all the capabilities of the Bramble. What it will become without it is a mystery.</Page>
+		<Page>Get ready. I'm opening the portal.</Page>
+		</Dialogue>		
+	</DialogueNode>
+
+
+
+
+
+
+</DialogueTree>

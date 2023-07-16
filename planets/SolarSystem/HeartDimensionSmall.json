@@ -1,0 +1,132 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "HeartDimensionSmall",
+	"canShowOnTitle": false,
+	"Base": {
+		"gravityFallOff": "linear",
+		"showMinimap": false
+	},
+	"Bramble": {
+		"dimension": {
+			"fogTint": {
+				"r": 20,
+				"g": 35,
+				"b": 40,
+				"a": 20
+
+			},
+			"fogDensity": 4.0,
+			"linksTo": "To_Enterance_Node",
+			"allowedEntrances": [ 0 ],
+			"radius": 30.0,
+			"vinePrefab": "none"
+		}
+	},
+	"Atmosphere": {
+		"size": 100,
+		"hasOxygen": true
+	},
+	"Props": {
+		"details": [
+			{
+				"assetBundle": "planets/Assets/heart_dimension",
+				"path": "Assets/Prefabs/heart_body.prefab",
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"rotation": {
+					"x": 52.3468,
+					"y": 103.7373,
+					"z": 180
+				},
+				"rename": "heart",
+				"scale": 50,
+				"keepLoaded": true
+			},
+			{
+				"assetBundle": "planets/Assets/heart_dimension",
+				"path": "Assets/Prefabs/ArtifactItem.prefab",
+				"position": {
+					"x": 196.90,
+					"y": 41.7818,
+					"z": -8.4364
+				},
+				"rotation": {
+					"x": 52.3468,
+					"y": 103.7373,
+					"z": 180
+				},
+				"rename": "HeartItem",
+				"keepLoaded": true
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/GravityCrystals/OtherComponentsGroup/Prefab_NOM_GravityCrystal",
+				"removeChildren": [ "Light_NOM_GravityCrystal", "Props_NOM_GravityCrystal", "Props_NOM_GravityCrystal_Base", "AudioSource_GravityCrystal" ],
+
+				"position": {
+					"x": -94.4148,
+					"y": 45.88,
+					"z": 56.4213
+				},
+				"rotation": {
+					"x": 50.6,
+					"y": 121.8762,
+					"z": 193.3651
+				},
+				"scale": 1
+			}
+		],
+		"audioSources": [
+			{
+				"audio": "planets/Content/Audio/BrambleCrash.mp3",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 1,
+					"z": 0
+				},
+				"volume": 2,
+				"minDistance": 300,
+				"rename": "BrambleCrash_SFX"
+			}
+
+		],
+		"remotes": [
+			{
+				"id": "NRE_2",
+				"decalPath": "planets/writing.png",
+				"stones": [
+					{
+						"position": {
+							"x": -81.6315,
+							"y": 96.0302,
+							"z": -102.4822
+						},
+						"rotation": {
+							"x": 1.5,
+							"y": 149.59,
+							"z": 290.5612
+						},
+						"rename": "HeartItem_Stone"
+					}
+				]
+			}
+		]
+	},
+	"Orbit": {
+		"staticPosition": {
+			"x": 35000.0,
+			"y": 35000.0,
+			"z": 35500.0
+		},
+		"isStatic": true
+	},
+	"ReferenceFrame": {
+		"enabled": false
+	},
+	"ShipLog": {},
+	"ShockEffect": {},
+	"removeChildren": [ "Sector/Atmosphere/AmbientLight_DB_Interior", "Sector/BrambleCrash_SFX" ]
+}

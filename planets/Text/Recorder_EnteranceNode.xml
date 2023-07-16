@@ -1,0 +1,50 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>SECCA: It seems like we've stumbled into a trap. It appears to be a giant plant that manipulates space at will.</Text>		
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>DIN: That's right. No matter where we go, it always brings us back to the starting point. The only way out is to investigate the node covered in the red substance.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>SECCA: The substance doesn't look harmless. It's almost like magma, but it's probably not the same material. What if we somehow disrupt the integrity of the membrane?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<Text>DIN: I've already tried that. Wood, metal, fabric — everything instantly ignites.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<Text>ESCALL: My friends, I'm afraid you'll have to continue without me...</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<Text>SECCA: The bleeding is getting worse! Escall, can you hear me? Don't give up, hold on!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>7</ID>
+		<Text>ESCALL: I've made up my mind already. We have no other options. I'll attempt to disrupt the integrity of the substance. I'm almost dead anyway, and waiting for help is in vain. We are the Nomai, we mustn't stop exploring. Goodbye...</Text>
+	</TextBlock>
+    <TextBlock>
+		<ID>8</ID>
+		<Text>SECCA: NO! ESCALL STOP! Escall...</Text>
+	</TextBlock>
+    <TextBlock>
+		<ID>9</ID>
+		<Text>DIN: He made his decision, Secca. Let him go.</Text>
+	</TextBlock>
+    <TextBlock>
+		<ID>10</ID>
+		<Text>...</Text>
+	</TextBlock>
+    <TextBlock>
+		<ID>11</ID>
+		<Text>DIN: The substance's reaction remains the same. But wait, do you see that?! The shard that pierced Escall created a hole in the substance. It's just a glass, Secca, it vaporizes the substance!</Text>
+	</TextBlock>
+    <TextBlock>
+		<ID>12</ID>
+		<Text>SECCA: Quickly, inside!</Text>
+	</TextBlock>
+</NomaiObject>

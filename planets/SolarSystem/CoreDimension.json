@@ -1,0 +1,271 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "CoreDimension",
+	"canShowOnTitle": false,
+	"Base": {
+		"gravityFallOff": "linear",
+		"showMinimap": false
+	},
+	"Bramble": {
+		"dimension": {
+			"fogTint": {
+				"r": 60,
+				"g": 0,
+				"b": 0,
+				"a": 255
+			},
+			"fogDensity": 3.0,
+			"linksTo": "DarkNest_To_Core_Node",
+			"radius": 750,
+			"allowedEntrances": [ 1 ],
+			"vinePrefab": "none"
+		},
+		"nodes": [
+			{
+				"linksTo": "HeartDimension",
+				"name": "Core_To_Heart_Node",
+				"fogTint": {
+					"r": 60,
+					"g": 0,
+					"b": 0,
+					"a": 255
+				},
+				"lightTint": {
+					"r": 60,
+					"g": 0,
+					"b": 0,
+					"a": 255
+				},
+				"position": {
+					"x": -264.5814,
+					"y": -74.0548,
+					"z": 32.9454
+				},
+				"rotation": {
+					"x": 20,
+					"y": 84,
+					"z": 0
+				},
+				"hasFogLight": false,
+					"scale": 1.5
+			}			
+		]
+	},
+	"Orbit": {
+		"staticPosition": {
+			"x": 35000.0,
+			"y": 39000.0,
+			"z": 35000.0
+		},
+		"isStatic": true
+	},
+	"Props": {
+
+		"details": [
+			{
+				"assetBundle": "planets/Assets/core_dimension",
+				"path": "Assets/Prefabs/CoreObject.prefab",
+				"position": {
+					"x": -286.4724,
+					"y": 0,
+					"z": 0
+				},
+				"rotation": {
+					"x": 41.12,
+					"y": 359.1573,
+					"z": 0
+				},
+				"rename": "Core",
+				"scale": 0.15,
+				"keepLoaded": true
+			},
+			{
+				"assetBundle": "planets/Assets/core_dimension",
+				"path": "Assets/Prefabs/EssenceObject.prefab",
+				"position": {
+					"x": -704.3,
+					"y": 23.67,
+					"z": -63
+				},
+				"rename": "EssenceObject_1",
+				"scale": 20,
+				"keepLoaded": true
+			},
+			{
+				"assetBundle": "planets/Assets/core_dimension",
+				"path": "Assets/Prefabs/EssenceObject.prefab",
+				"position": {
+					"x": -277.53,
+					"y": -109.8,
+					"z": 550.15
+				},
+				"rename": "EssenceObject_2",
+				"keepLoaded": true
+			},
+			{
+				"assetBundle": "planets/Assets/core_dimension",
+				"path": "Assets/Prefabs/EssenceObject.prefab",
+				"position": {
+					"x": -34.2,
+					"y": 217.94,
+					"z": -72.42
+				},
+				"rename": "EssenceObject_3",
+				"keepLoaded": true
+			},
+			{
+
+				"path": "DB_EscapePodDimension_Body/Sector_EscapePodDimension/Interactables_EscapePodDimension/DynamicProps_EscapePodDimension/DeadNomai_Body (6)/Prefab_NOM_Dead_Suit_Advanced_FloatB",
+				"position": {
+					"x": -707.2,
+					"y": 22.68,
+					"z": -66
+				},
+				"rename": "Dead_Nomai_1"
+			},
+			{
+
+				"path": "DB_EscapePodDimension_Body/Sector_EscapePodDimension/Interactables_EscapePodDimension/DynamicProps_EscapePodDimension/DeadNomai_Body (4)/Prefab_NOM_Dead_Suit_Advanced_FloatC",
+				"position": {
+					"x": -32.56,
+					"y": 221.04,
+					"z": -70.25
+				},
+				"rename": "Dead_Nomai_2"
+
+			}
+		],
+		"signals": [
+			{
+				"detectionRadius": 1,
+				"frequency": "Dark Fluctuations",
+				"identificationRadius": 200.0,
+				"name": "Essence",
+				"position": {
+					"x": -704.3,
+					"y": 23.67,
+					"z": -63
+				},
+				"onlyAudibleToScope": true,
+				"audio": "planets/Content/Audio/WhispersEffect.mp3",
+				"rename": "Essence_Signal_1"
+			},
+			{
+				"detectionRadius": 1,
+				"frequency": "Dark Fluctuations",
+				"identificationRadius": 200.0,
+				"name": "Essence",
+				"position": {
+					"x": -277.53,
+					"y": -109.8,
+					"z": 550.15
+				},
+				"onlyAudibleToScope": true,
+				"audio": "planets/Content/Audio/WhispersEffect.mp3",
+				"rename": "Essence_Signal_2"
+			},
+			{
+				"detectionRadius": 1,
+				"frequency": "Dark Fluctuations",
+				"identificationRadius": 200.0,
+				"name": "Essence",
+				"position": {
+					"x": -34.2,
+					"y": 217.94,
+					"z": -72.42
+				},
+				"onlyAudibleToScope": true,
+				"audio": "planets/Content/Audio/WhispersEffect.mp3",
+				"rename": "Essence_Signal_3"
+			}
+		],
+		"translatorText": [
+			{
+				"position": {
+					"x": -35.23,
+					"y": 222.79,
+					"z": -67.841
+				},
+				"rotation": {
+					"x": 32.2597,
+					"y": 357.6841,
+					"z": 127.471
+				},
+				"xmlFile": "planets/Text/Recorder_Essence_2.xml",
+				"type": "preCrashRecorder",
+				"rename": "Recorder_Essence_2"
+			},
+			{
+				"position": {
+					"x": -704.3,
+					"y": 23.67,
+					"z": -63
+				},
+				"rotation": {
+					"x": 89.9,
+					"y": 341.3,
+					"z": 0
+				},
+				"xmlFile": "planets/Text/Recorder_Essence_1.xml",
+				"type": "preCrashRecorder",
+				"rename": "Recorder_Essence_1"
+
+			},
+			{
+				"position": {
+					"x": -79.8789,
+					"y": 94.0698,
+					"z": -101.264
+				},
+				"rotation": {
+					"x": 2.0173,
+					"y": 318.4996,
+					"z": 335.5344
+				},
+				"xmlFile": "planets/Text/RIP.xml",
+				"type": "wall",
+				"alignRadial": true,
+				"arcInfo": [
+					{
+						"type": "adult"
+					}
+				],
+				"seed": 30,
+				"rename": "RIP"
+
+			}
+		]
+	},
+	"Volumes": {
+		"reverbVolumes": [
+			{
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+
+				"radius": 500
+			}
+		],
+
+		"audioVolumes": [
+			{
+				"audio": "planets/Content/Audio/CoreAmbience.mp3",
+				"clipSelection": "random",
+				"track": "music",				
+				"volume": 1,
+				"radius": 1500.0,				
+				"loop": true				
+			
+			}
+		]		
+	},
+
+	"ReferenceFrame": {
+		"enabled": false
+	},
+	"ShipLog": {},
+	"ShockEffect": {},
+	"removeChildren": [ "Sector/Core_To_Heart_Node/Terrain_DB_BrambleSphere_Inner_v2" ]
+}

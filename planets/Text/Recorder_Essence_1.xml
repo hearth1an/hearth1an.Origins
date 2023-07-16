@@ -1,0 +1,14 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>SECCA: The voice commanded us to collect it, but the creature's tentacles are dangerous. They cause excruciating pain upon approach!</Text>		
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>SECCA: Din, it was a mistake... we... separated. I'm afraid I can no longer... continue the journey...</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>SECCA: ...</Text>
+	</TextBlock>	
+</NomaiObject>

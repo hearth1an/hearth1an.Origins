@@ -1,0 +1,114 @@
+ManifestFileVersion: 0
+CRC: 565211645
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 90fe0c80ab9fcc7a994b7aeb6bad7991
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9547a616360dd611d93ad0298db897d2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3e2cd530bcd6ab93471c4405ca1c5b6a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7b2cdfd021d6efff82736e3885af343b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fbb2498122f7e23a2e87544333cb528f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2610d722ee30ea0c1ac7ba130d812afa, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0a5bc582e4f904dcec905aaf2f0c035a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b446aa63b809cb3da1921800cd416866, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c3922f933e798f7e3649f1ecc35d5217, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 626cf4b3f32288e2248c885e09fd6e48, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1beb2a46e0dd133c749d1f6530e10662, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f913c288c393f80a7e923fc1c775f4fb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0053d129d589d30957bcc3b1958fc878, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 25b7e56961bf1df33ed31b8c786ab1c3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2145ed3a866d4bd5a94d98ee05d0fa4f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7f2e3f7cc6baeb3499f9963353d7b458, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0439374de7aa5c9cadcc76f4256d44a9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4d37ab8d4d1e425918e8172c84cb8288, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a5ffb90e25da802063144102efe65833, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Shader/Outer Wilds_Atmospherics_Fog (Far).asset
+- Assets/Prefabs/CaveDimensionBody 1.prefab
+- Assets/AssetsDownloaded/alien-world-explorer/textures/BigMushrooms_BaseColor.png
+- Assets/Nomai Ruins/Resources/Shaders/Standard.asset
+- Assets/AssetsDownloaded/alien-world-explorer/source/bloemtest.fbx
+- Assets/AssetsDownloaded/alien-world-explorer/textures/EyePlants_BaseColor.png
+- Assets/AssetsDownloaded/alien-world-explorer/textures/grass_BaseColor.png
+- Assets/Prefabs/HornetGreen.prefab
+- Assets/Prefabs/Sphere.prefab
+- Assets/PrefabInstance/Psionic.prefab
+- Assets/Prefabs/cavedimension.fbx
+- Assets/Prefabs/Psionic.prefab
+- Assets/AssetsDownloaded/alien-world-explorer/textures/Mushrooms1_BaseColor.png
+- Assets/Scenes/HourglassTwins/Streamingmeshes_props/Props_NOM_Staff_Geo.asset
+- Assets/AssetsDownloaded/alien-world-explorer/textures/LeafPlants_BaseColor.png
+- Assets/AssetsDownloaded/stalagmites-collums-and-stalacites/source/everything.fbx
+- Assets/Prefabs/FireVase_New.prefab
+- Assets/Prefabs/EscallGrave.prefab
+- Assets/Prefabs/9076-normal.jpg
+- Assets/Prefabs/HornetYellow.prefab
+- Assets/Prefabs/DistortionSphere.prefab
+- Assets/AssetsDownloaded/alien-world-explorer/textures/glass_BaseColor.png
+- Assets/Prefabs/HornetRed.prefab
+- Assets/Scenes/HourglassTwins/Streamingmeshes_props/Props_NOM_Toy_Geo.asset
+Dependencies: []

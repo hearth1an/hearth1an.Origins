@@ -1,0 +1,20 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>BEGIN FLIGHTLOG: <![CDATA[<color=orange>Escape Pod 3</color>]]>. <![CDATA[<color=orange>Vessel</color>]]> has been mortally injured. Emergency sequence activated. Awaiting departure from <![CDATA[<color=orange>Vessel</color>]]>.</Text>		
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>Launching <![CDATA[<color=orange>Escape Pod 3</color>]]>... Launching <![CDATA[<color=orange>Escape Pod 2</color>]]>... Now launching <![CDATA[<color=orange>Escape Pod 1</color>]]>.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>ALERT. Collision imminent. Preparing for impact.</Text>
+	</TextBlock>	
+	<TextBlock>
+		<ID>4</ID>
+		<Text>Scanning external environment... Scan complete. Spatial anomaly detected. No oxygen detected. No organic life detected.
+Verdict: EVACUATION RECOMMENDED.</Text>
+	</TextBlock>	
+	
+</NomaiObject>

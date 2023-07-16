@@ -1,0 +1,96 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "DarkNestDimension",
+	"canShowOnTitle": false,
+	"Base": {
+		"gravityFallOff": "linear",
+		"showMinimap": false
+	},
+	"Bramble": {
+		"dimension": {
+			"fogTint": {
+				"r": 60,
+				"g": 0,
+				"b": 0,
+				"a": 255
+			},
+			"fogDensity": 4.0,
+			"linksTo": "To_DarkNest",
+			"radius": 450.0,
+			"vinePrefab": "smallNest"
+		},
+		"nodes": [
+			{
+				"linksTo": "CoreDimension",
+				"name": "DarkNest_To_Core_Node",
+				"fogTint": {
+					"r": 60,
+					"g": 0,
+					"b": 0,
+					"a": 255
+				},
+				"lightTint": {
+					"r": 60,
+					"g": 0,
+					"b": 0,
+					"a": 255
+				},
+				"hasFogLight": false,
+				"position": {
+					"x": 273.7862,
+					"y": 134.8132,
+					"z": -13.3619
+				},
+				"rotation": {
+					"x": 89.972,
+					"y": 250,
+					"z": 0
+				},
+				"scale": 2
+			},
+			{
+				"linksTo": "CaveDimension",
+				"name": "DarkNest_To_Cave_Node",
+				"possibleExits": [ 1 ],
+				"fogTint": {
+					"r": 50,
+					"g": 20,
+					"b": 129,
+					"a": 255
+				},
+				"lightTint": {
+					"r": 50,
+					"g": 20,
+					"b": 129,
+					"a": 255
+				},
+				"hasFogLight": false,
+				"position": {
+					"x": 128.3823,
+					"y": -343.7029,
+					"z": -36.8456
+				},
+				"rotation": {
+					"x": 9.4024,
+					"y": 341.7029,
+					"z": 319.08
+				}
+			}
+		]
+	},
+	"Orbit": {
+		"staticPosition": {
+			"x": 33000.0,
+			"y": 33000.0,
+			"z": 33000.0
+		},
+		"isStatic": true
+	},
+	"Props": {},
+	"ReferenceFrame": {
+		"enabled": false
+	},
+	"ShipLog": {},
+	"ShockEffect": {},
+	"removeChildren": [ "Sector/Atmosphere/AmbientLight_DB_Interior", "Sector/DarkNest_To_Core_Node" ]
+}

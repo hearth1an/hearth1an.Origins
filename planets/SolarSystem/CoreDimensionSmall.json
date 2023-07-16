@@ -1,0 +1,62 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "CoreDimensionSmall",
+	"canShowOnTitle": false,
+	"Base": {
+		"gravityFallOff": "linear",
+		"showMinimap": false
+	},
+	"Bramble": {
+		"dimension": {
+			"fogTint": {
+				"r": 100,
+				"g": 75,
+				"a": 100
+			},
+			"fogDensity": 3.0,
+			"linksTo": "To_Enterance_Node",
+			"radius": 250.0,
+			"vinePrefab": "hub"
+		},
+		"nodes": [
+			{
+				"linksTo": "HeartDimension",
+				"name": "Core_To_Heart_Node",
+				"fogTint": {
+					"r": 100,
+					"g": 84,
+					"a": 100
+				},
+				"lightTint": {
+					"r": 100,
+					"g": 84,
+					"a": 100
+				},
+				"rotation": {
+					"x": 65.2428,
+					"y": -137.305,
+					"z": 198.1078
+				},
+				"position": {
+					"x": 65.2428,
+					"y": -137.305,
+					"z": 198.1078
+				}
+			}
+		]
+	},
+	"Orbit": {
+		"staticPosition": {
+			"x": 36000.0,
+			"y": 36000.0,
+			"z": 38000.0
+		},
+		"isStatic": true
+	},
+	"Props": {},
+	"ReferenceFrame": {
+		"enabled": false
+	},
+	"ShipLog": {},
+	"ShockEffect": {}	
+}

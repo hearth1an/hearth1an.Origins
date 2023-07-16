@@ -1,0 +1,64 @@
+ManifestFileVersion: 0
+CRC: 2543119746
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bda07812db7d57b046bb9138be923eda
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b35852a1ff63059742be0e2d2b8e32f1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2610d722ee30ea0c1ac7ba130d812afa, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b446aa63b809cb3da1921800cd416866, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 25b7e56961bf1df33ed31b8c786ab1c3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2145ed3a866d4bd5a94d98ee05d0fa4f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a5ffb90e25da802063144102efe65833, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1baab1be2365418212ecfb0e7844d02e, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/EssenceObject.prefab
+- Assets/Prefabs/CoreObject.prefab
+- Assets/Prefabs/LaveEffect.prefab
+Dependencies:
+- E:/Outer Wilds modding/Jam2023/assetbundles/cave_dimension_assets

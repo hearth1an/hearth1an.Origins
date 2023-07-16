@@ -1,0 +1,26 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>SECCA: We will miss Escall dearly.</Text>		
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>DIN: He was a true explorer, a true leader of his clan. I hope we will meet with them again... Annona, Plume, Coleus, and others...</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>SECCA: I hope so too, Din. It's time for us to go. The voice is calling us..</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<Text>DIN: If someone ever reads this message in search of us, please be cautious. We have no idea what awaits us ahead. Good luck to us and to you.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<Text>SECCA: By the way, there's still fuel left in Escall's spacesuit helmet. You can refuel before we leave.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<Text>DIN: That's a good idea, thank you.</Text>
+	</TextBlock>		
+</NomaiObject>

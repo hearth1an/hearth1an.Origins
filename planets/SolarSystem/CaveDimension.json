@@ -1,0 +1,237 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "CaveDimension",
+	"canShowOnTitle": false,
+
+	"Bramble": {
+		"dimension": {
+			"fogTint": {
+				"r": 50,
+				"g": 20,
+				"b": 129,
+				"a": 255
+			},
+			"fogDensity": 7.0,
+			"linksTo": "DarkNest_To_Cave_Node",
+			"radius": 250.0,
+			"vinePrefab": "none"
+		}		
+	},
+	"Orbit": {
+		"staticPosition": {
+			"x": 32000.0,
+			"y": 30000.0,
+			"z": 30000.0
+		},
+		"isStatic": true
+
+	},
+	"Props": {
+
+		"details": [
+			{
+				"assetBundle": "planets/Assets/cave_dimension_assets",
+				"path": "Assets/Prefabs/CaveDimensionBody 1.prefab",
+				"position": {
+					"x": 273.7862,
+					"y": 134.8132,
+					"z": -13.3619
+				},
+				"rotation": {
+					"x": 357.285,
+					"y": 340.146,
+					"z": 284.6145
+				},
+				"rename": "Cave",
+				"scale": 3000,
+				"keepLoaded": true
+			},
+			{
+				"assetBundle": "planets/Assets/cave_dimension_assets",
+				"path": "Assets/Prefabs/FireVase_New.prefab",
+				"position": {
+					"x": -81.6315,
+					"y": 96.0302,
+					"z": -102.4822
+				},
+				"rotation": {
+					"x": 1.5,
+					"y": 149.59,
+					"z": 290.5612
+				}
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/GravityCrystals/OtherComponentsGroup/Prefab_NOM_GravityCrystal",
+				"removeChildren": [ "Light_NOM_GravityCrystal", "Props_NOM_GravityCrystal", "Props_NOM_GravityCrystal_Base", "AudioSource_GravityCrystal" ],
+				"position": {
+					"x": -88.804,
+					"y": 94.8152,
+					"z": -105.7695
+				},
+				"rotation": {
+					"x": 81.5,
+					"y": 338.09,
+					"z": 0
+				},
+				"scale": 6
+			},
+			{
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/GravityCrystals/OtherComponentsGroup/Prefab_NOM_GravityCrystal",
+				"removeChildren": [ "Light_NOM_GravityCrystal", "Props_NOM_GravityCrystal", "Props_NOM_GravityCrystal_Base", "AudioSource_GravityCrystal" ],
+
+				"position": {
+					"x": 79.4886,
+					"y": 94.4876,
+					"z": -145.3653
+				},
+				"rotation": {
+					"x": 322.1994,
+					"y": 251.5102,
+					"z": 257.1767
+				},
+				"scale": 6
+			},
+			{
+				"path": "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/Prefab_HEA_Campfire",
+				"removeChildren": [ "Props_HEA_Campfire/Campfire_Ash", "Props_HEA_Campfire/Campfire_Embers", "Props_HEA_Campfire/Campfire_Logs", "Props_HEA_Campfire/Campfire_Rocks" ],
+				"rename": "CaveCampfire",
+				"position": {
+					"x": 82.08,
+					"y": 91.6876,
+					"z": -144
+				},
+				"rotation": {
+					"x": 314.4304,
+					"y": 253.7372,
+					"z": 255.4921
+				}
+
+			}
+		],
+		"remotes": [
+			{
+				"id": "NRE",
+				"decalPath": "planets/writing.png",
+				"stones": [
+					{
+						"position": {
+							"x": -81.6315,
+							"y": 96.0302,
+							"z": -102.4822
+						},
+						"rotation": {
+							"x": 1.5,
+							"y": 149.59,
+							"z": 290.5612
+						},
+						"rename": "FireVase_New2"
+					}
+				]
+
+			}
+
+		],
+		"translatorText": [
+			{
+				"position": {
+					"x": 79.44,
+					"y": 91.255,
+					"z": -144.9311
+				},
+				"rotation": {
+					"x": 21.68,
+					"y": 255.1904,
+					"z": 293.9298
+				},
+				"xmlFile": "planets/Text/Recorder_CampfireCave.xml",
+				"type": "preCrashRecorder",
+				"rename": "Recorder_CampfireCave"
+			},
+			{
+				"position": {
+					"x": -84.4308,
+					"y": 97.185,
+					"z": -102.8221
+				},
+				"rotation": {
+					"x": 89.9,
+					"y": 341.3,
+					"z": 0
+				},
+				"xmlFile": "planets/Text/Recorder_EscallCave.xml",
+				"type": "preCrashRecorder",
+				"rename": "Recorder_EscallCave"
+
+			},
+			{
+				"position": {
+					"x": -79.8789,
+					"y": 94.0698,
+					"z": -101.264
+				},
+				"rotation": {
+					"x": 2.0173,
+					"y": 318.4996,
+					"z": 335.5344
+				},
+				"xmlFile": "planets/Text/RIP.xml",
+				"type": "wall",
+				"alignRadial": false,
+				"arcInfo": [
+					{
+						"type": "adult"
+					}
+				],
+				"seed": 12,
+				"rename": "RIP"
+
+			}
+		]
+	},
+	"ShipLog": {},
+	"Atmosphere": {
+		"size": 250,
+		"hasOxygen": true,
+		"hasRain": true,
+		"fogTint": {
+			"r": 50,
+			"g": 20,
+			"b": 129,
+			"a": 255
+		},
+		"fogSize": 500
+	},
+	"Volumes": {
+		"reverbVolumes": [
+			{
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+
+				"radius": 500
+			}
+		],
+
+		"audioVolumes": [
+			{
+				"audio": "planets/Content/Audio/CaveAmbience.mp3",
+				"clipSelection": "random",
+				"track": "music",
+				"volume": 1,
+				"radius": 400.0
+			}
+		],
+		"oxygenVolumes": [
+			{
+				"playRefillAudio": true,
+				"radius": 1000
+			}
+		]
+	},
+	"ReferenceFrame": {
+		"enabled": false
+	},
+	"removeChildren": [ "Sector/Atmosphere/AmbientLight_DB_Interior" ]
+}

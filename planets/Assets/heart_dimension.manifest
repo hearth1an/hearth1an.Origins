@@ -1,0 +1,87 @@
+ManifestFileVersion: 0
+CRC: 475569683
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4dc95b581cc69a22c77ec07ae469e597
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4aab7d941759b589b5aef0db7e71849a
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: d0fc6f5187a81dc47999eefade6f0935, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 21bf7f712d84d26478ebe6a299f21738, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fbb2498122f7e23a2e87544333cb528f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d21dcc2386d650c4597f3633c75a1f98, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 48853ae485fa386428341ac1ea122570, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 15e0374501f39d54eb30235764636e0e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6cd941772c39872be9d9611da76f777c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 25b7e56961bf1df33ed31b8c786ab1c3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2145ed3a866d4bd5a94d98ee05d0fa4f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fde0d25a170598d46a0b9dc16b4527a5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1baab1be2365418212ecfb0e7844d02e, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 320
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/ArtifactItem.prefab
+- Assets/Prefabs/heart_body.prefab
+Dependencies:
+- E:/Outer Wilds modding/Jam2023/assetbundles/cave_dimension_assets

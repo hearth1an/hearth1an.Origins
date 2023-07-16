@@ -1,0 +1,51 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "TimberHearth",
+	"Props": {
+		"details": [
+			{
+				"assetBundle": "planets/Assets/hearthians",
+				"path": "Assets/Prefabs/Villager_HEA_Slate.prefab",
+				"rename": "Slate_Village",
+				"position": {
+					"x": -6.7015,
+					"y": -48.4182,
+					"z": 225.1804
+				},
+				"rotation": {
+					"x": 4.6254,
+					"y": 88.1432,
+					"z": 101.1384
+				},
+				"scale": 1
+			}
+
+		],
+
+		"dialogue": [		
+			{
+				"position": {
+					"x": 0,
+					"y": 1.5,
+					"z": 0
+				},
+				"xmlFile": "planets/Dialogue/Slate.xml",
+				"parentPath": "Sector_TH/Slate_Village",
+				"isRelativeToParent": true,
+				"pathToAnimController": "Sector_TH/Slate_Village/Villager_HEA_Slate_ANIM_LogSit",				
+				"rename": "Slate_Dialogue",
+				"lookAtRadius": 6,
+				"radius": 1				
+			}			
+		]
+
+
+
+
+	},
+	"removeChildren": [
+		"Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Launch_Tower/2ndLoopConversation_Trigger",	
+		"Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate"
+		
+	]
+}
