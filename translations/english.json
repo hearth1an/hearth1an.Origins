@@ -9,7 +9,7 @@
 
 		"FIRE_VASE_ITEM": "Ceremony vase",
 		"HEART_ITEM": "Dark Bramble Heart",
-		"HORNET_INTERACTION": "Gather flame",
+		"HORNET_INTERACTION": "Creature Flames",
 
 		"FIRST_INTERACTION": "WHO ARE YOU",
 		"SECOND_INTERACTION": "FIND THE CORE",
@@ -19,7 +19,7 @@
 		"SIXTH_INTERACTION": "GOOD LUCK",
 
 		"ENDING_TEXT": "THE END",
-
+		"MOD_POPUP": "Thank you for downloading Origins mod! This mod might be scary sometimes, but there's no other option... Don't forget to talk with Slate. Enjoy!",
 		"SYSTEM_RESTORED": "<![CDATA[<color=green>SYSTEM INTEGRITY RESTORED</color>]]>",
 		"SYSTEM_ERROR": "<![CDATA[<color=red>FATAL ERROR</color>]]>"
 

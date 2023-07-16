@@ -1,3 +1,18 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/addon_manifest_schema.json"
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/addon_manifest_schema.json",
+    "credits": [
+        "",
+        "hearth1an#Mod Author",
+        "",
+        "",
+        "Music Turtle#Voice acting",
+        "",
+        "",
+        "This mod was made for Outer Wilds Modding Jam in july 2023",
+        "",
+        "",
+        "Thank you for playing Origins!",
+        ""
+    ],
+    "popupMessage": "MOD_POPUP"
 }

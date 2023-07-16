@@ -43,6 +43,9 @@
     </None>
     <None Include="addon-manifest.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>	
+    </None>
+	  <None Include="subtitle.png">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
   </ItemGroup>
 </Project>
