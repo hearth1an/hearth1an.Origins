@@ -32,9 +32,10 @@ Author:
 - [Core Creatures sfx](https://www.youtube.com/watch?v=x0qEwAc4sR0&ab_channel=TheAmazinTacoChannel)
 - [Cave Music - Simon Chylinski (Subnautica)](https://youtu.be/aT9_-P7N950?t=2727)
 
-# Mod inspired by this games:
+# Mod inspired by this:
 - Subnautica,
-- SOMA
+- SOMA,
+- Stranger Things (4 season)
 
 # Disclaimer
 This work is unofficial Fan Content created under permission from the Mobius Digital Fan Content Policy.
