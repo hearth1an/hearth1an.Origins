@@ -1,6 +1,6 @@
 Outer Wilds - Origins (unofficial story mod made for modding jam on july 2023) 
 
-![origins gif final](https://github.com/hearth1an/hearth1an.Origins/assets/106444732/792fbe8d-0952-4d94-a76b-dcaceb74f560)
+![origins gif final](https://github.com/hearth1an/hearth1an.Origins/assets/106444732/9c5dc66c-a0e9-4bf8-bdad-861cbb629928)
 
 Works only on PC and compitable with both flat version and VR ([NomaiVR](https://outerwildsmods.com/mods/nomaivr)).
 
