@@ -15,6 +15,7 @@
 			},
 			"fogDensity": 3.0,
 			"linksTo": "EnteranceLoop_Node",
+			"allowedEntrances": [1],
 			"radius": 450.0,
 			"vinePrefab": "hub"
 		},
@@ -63,13 +64,16 @@
 					"a": 0
 				},
 				"hasFogLight": true,
-				"rotation": {
-					"x": 65.2428,
-					"y": -137.305,
-					"z": 198.1078
-				},
+
 				"position": {
-					"z": -198.0
+					"x": -44.077,
+					"y": 96.6231,
+					"z": -364.37
+				},
+				"rotation": {
+					"x": 89.90,
+					"y": 66.46,
+					"z": 0
 				}
 			}
 		]
@@ -84,6 +88,56 @@
 
 	},
 	"Props": {
+		"translatorText": [
+			{
+				"position": {
+					"x": -199.7748,
+					"y": -145.099,
+					"z": -18.2964
+				},
+				"rotation": {
+					"x": 65,
+					"y": 0,
+					"z": 0
+
+				},
+				"xmlFile": "planets/Text/Recorder_EscapePod.xml",
+				"type": "preCrashRecorder",
+				"rename": "Recorder_EscapePod"
+			},
+			{
+				"position": {
+					"x": -198.4013,
+					"y": -155.5513,
+					"z": -0.9793
+				},
+				"rotation": {
+					"x": 311.4028,
+					"y": 95.3349,
+					"z": 0
+
+				},
+				"xmlFile": "planets/Text/Computer_EscapePod.xml",
+				"type": "preCrashComputer",
+				"rename": "Computer_EscapePod"
+			},
+			{
+				"position": {
+					"x": 31.2098,
+					"y": -348.4135,
+					"z": -24.4857
+				},
+				"rotation": {
+					"x": 290.2473,
+					"y": 277.0108,
+					"z": 107
+
+				},
+				"xmlFile": "planets/Text/Recorder_EnteranceNode.xml",
+				"type": "preCrashRecorder",
+				"rename": "Recorder_EnteranceNode"
+			}
+		],
 		"details": [
 			{
 				"path": "DB_EscapePodDimension_Body/Sector_EscapePodDimension/Sector_EscapePodBody/Geometry_EscapePodBody",
@@ -101,7 +155,41 @@
 				"alignRadial": false,
 
 				"rename": "EscapePod"
-			},			
+			},
+			{
+				"path": "DB_VesselDimension_Body/Sector_VesselDimension/Interactables_VesselDimension/UNSORTED/Prefab_NOM_Lamp_Glow_Vessel_Wall (25)",
+				"position": {
+					"x": 38,
+					"y": -339,
+					"z": -33
+				},				
+				"rename": "RecorderFlare_1"
+			},
+			{
+				"path": "DB_VesselDimension_Body/Sector_VesselDimension/Interactables_VesselDimension/UNSORTED/Prefab_NOM_Lamp_Glow_Vessel_Wall (25)",
+				"position": {
+					"x": 23,
+					"y": -341,
+					"z": -14
+				},
+				"rotation": {
+					"x": 290.2473,
+					"y": 277.0108,
+					"z": 107
+
+				},
+				"rename": "RecorderFlare_2"
+			},
+			{
+				"path": "DB_VesselDimension_Body/Sector_VesselDimension/Interactables_VesselDimension/UNSORTED/Prefab_NOM_Lamp_Glow_Vessel_Wall (25)",
+				"position": {
+					"x": 25,
+					"y": -346,
+					"z": -29
+				},
+				
+				"rename": "RecorderFlare_3"
+			},
 			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/DistressBeaconTransmitter",
 				"parentPath": "Sector/EscapePod",
@@ -175,58 +263,9 @@
 					"z": 0
 				},
 				"rename": "Escape_Pod_Signal"
-			}			
-		],
-		"translatorText": [
-			{
-				"position": {
-					"x": -201.6015,
-					"y": -155.9348,
-					"z": -2.1048
-				},
-				"rotation": {
-					"x": 60,
-					"y": 55.6,
-					"z": 30
-
-				},
-				"xmlFile": "planets/Text/Recorder_EscapePod.xml",
-				"type": "preCrashRecorder",
-				"rename": "Recorder_EscapePod"
-			},
-			{
-				"position": {
-					"x": -198.4013,
-					"y": -155.5513,
-					"z": -0.9793
-				},
-				"rotation": {
-					"x": 311.4028,
-					"y": 95.3349,
-					"z": 0
-
-				},
-				"xmlFile": "planets/Text/Computer_EscapePod.xml",
-				"type": "preCrashComputer",
-				"rename": "Computer_EscapePod"
-			},
-			{
-				"position": {
-					"x": -62.168,
-					"y": -449.0264,
-					"z": -16.3455
-				},
-				"rotation": {
-					"x": 290.2473,
-					"y": 277.0108,
-					"z": 107
-
-				},
-				"xmlFile": "planets/Text/Recorder_EnteranceNode.xml",
-				"type": "preCrashRecorder",
-				"rename": "Recorder_EnteranceNode"
 			}
 		]
+
 
 
 	},

@@ -38,8 +38,7 @@ namespace Origins.Components.Scripts
             PlayerEffectController.PlayAudioOneShot(AudioType.ToolItemWarpCorePickUp, 0.5f);
             base.PickUpItem(holdTranform);
             transform.localPosition = new Vector3(0f, 0.2f, 0f);
-            transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-			
+            transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);			
 
 			if (holdTranform != null)
             {
@@ -48,9 +47,10 @@ namespace Origins.Components.Scripts
 					SearchUtilities.Find("HeartDimensionSmall_Body/Sector/BrambleCrash_SFX").SetActive(true);
 					sixthTrigger.SetActive(true);
 					
-					SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/backup/rings_low/GameObject/ring1_low").AddComponent<NewHorizons.Components.AddPhysics>();
-					Invoke("StartMinimise", 5f);
+					//SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/backup/rings_low/GameObject/ring1_low").AddComponent<NewHorizons.Components.AddPhysics>();
+					Invoke("StartMinimise", 10f);
 					wasTaken = true;
+
 
                 }
             }
@@ -61,10 +61,13 @@ namespace Origins.Components.Scripts
         {
 			SearchUtilities.Find("HeartDimensionSmall_Body/Sector").GetComponent<SmoothMinimiser>().StartEvent();
 			hazard.SetActive(true);
+			Invoke("TriggerEnding", 10);
 
 		}
 
-        public override void SocketItem(Transform socketTransform, Sector sector)
+        private void TriggerEnding() => FindObjectOfType<TransformController>().InvokeEnding();
+
+		public override void SocketItem(Transform socketTransform, Sector sector)
 		{
 			base.SocketItem(socketTransform, sector);
 			EnableInteraction(false);

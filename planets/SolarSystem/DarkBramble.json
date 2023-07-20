@@ -10,6 +10,7 @@
 			{
 				"linksTo": "EnteranceDimension",
 				"name": "To_Enterance_Node",
+				
 				"fogTint": {
 					"r": 83,
 					"g": 129,
@@ -32,7 +33,7 @@
 					"y": 0,
 					"z": 0
 				},				
-				"scale": 3
+				"scale": 2.7
 			}
 		]
 	},

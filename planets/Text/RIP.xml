@@ -2,6 +2,6 @@
   <TextBlock>
     <ID>1</ID>
     <LocationA />
-    <Text>Here lies the nomai Escall. He was always a true Nomai and remained true to himself until the end.</Text>
+    <Text>TEXT_RIP</Text>
   </TextBlock>  
 </NomaiObject>

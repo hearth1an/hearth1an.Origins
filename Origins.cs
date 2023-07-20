@@ -56,7 +56,7 @@ namespace Origins
             var player = SearchUtilities.Find("Player_Body");
             if (player != null)
             {
-              //  player.AddComponent<DebugCommands>();
+               // player.AddComponent<DebugCommands>();
                 WriteUtil.WriteLine("Warp commands added");
                 player.AddComponent<PlayerEffectController>();
             }

@@ -219,7 +219,7 @@
 				"audio": "planets/Content/Audio/CaveAmbience.mp3",
 				"clipSelection": "random",
 				"track": "music",
-				"volume": 1,
+				"volume": 0.7,
 				"radius": 400.0
 			}
 		],
@@ -231,7 +231,7 @@
 		]
 	},
 	"ReferenceFrame": {
-		"enabled": false
+		"enabled": false	
 	},
 	"removeChildren": [ "Sector/Atmosphere/AmbientLight_DB_Interior" ]
 }

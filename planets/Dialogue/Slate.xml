@@ -5,17 +5,17 @@
 		<Name>Start</Name>		
 		<EntryCondition>DEFAULT</EntryCondition>		
 		<Dialogue>
-			<Page>Heyo hatchling! What's up?</Page>			
+			<Page>SLATE_DIALOGUE_1</Page>			
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
 			    <CancelledPersistentCondition>ENTRY_DISCOVERED</CancelledPersistentCondition>
-				<Text>What's going on, why you here?</Text>
+				<Text>SLATE_DIALOGUE_2</Text>
 				<DialogueTarget>START_QUESTION_1</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 			<RequiredPersistentCondition>ENTRY_DISCOVERED</RequiredPersistentCondition>	
-				<Text>What's new, Slate?</Text>
+				<Text>SLATE_DIALOGUE_3</Text>
 				<DialogueTarget>START_QUESTION_2</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
@@ -26,12 +26,13 @@
 		<Name>START_QUESTION_1</Name>
 		<EntryCondition></EntryCondition>
 		<Dialogue>			
-			<Page>Good question! We detected a new, strange signal somewhere in the Dark Bramble's orbit.</Page>
-			<Page>By saying "detected," I mean we detected it once aaaand it's gone! Very strange, huh? Why don't you fly over and take a look around?</Page>		
+			<Page>SLATE_DIALOGUE_4</Page>
+			<Page>SLATE_DIALOGUE_5</Page>
+			<Page>SLATE_DIALOGUE_6</Page>		
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>				
-				<Text>Sure! Why not.</Text>
+				<Text>SLATE_DIALOGUE_7</Text>
 				<DialogueTarget>START_QUESTION_1.1</DialogueTarget>
 				<ConditionToSet>START_ENTRY_2</ConditionToSet>
 			</DialogueOption>			
@@ -42,11 +43,11 @@
 		<Name>START_QUESTION_1.1</Name>
 		<EntryCondition></EntryCondition>
 		<Dialogue>			
-			<Page>Perfect. Maybe we will finally find out why it's always disappearing.</Page>		
+			<Page>SLATE_DIALOGUE_8</Page>		
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>				
-				<Text>Bye!</Text>				
+				<Text>SLATE_DIALOGUE_9</Text>				
 			</DialogueOption>			
 		</DialogueOptionsList>
 	</DialogueNode>
@@ -55,7 +56,7 @@
 		<Name>START_ENTRY_2</Name>
 		<EntryCondition>START_ENTRY_2</EntryCondition>
 		<Dialogue>			
-			<Page>Good luck, keep your ship safe.</Page>		
+			<Page>SLATE_DIALOGUE_10</Page>		
 		</Dialogue>	
 	</DialogueNode>
 
@@ -64,11 +65,11 @@
 	<DialogueNode>
 		<Name>START_QUESTION_2</Name>
 		<Dialogue>
-			<Page>You will never believe me! Dark Bramble becomes BLUE!</Page>
+			<Page>SLATE_DIALOGUE_11</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>				
-				<Text>Wow, this is unbelievable! I have to fly there and uncover all the secrets! <![CDATA[<size=20>]]>Perhaps it's blue because I know the frequency of the signal...<![CDATA[</size>]]></Text>
+				<Text>SLATE_DIALOGUE_12</Text>
 				<DialogueTarget>START_QUESTION_2.1</DialogueTarget>
 				<ConditionToSet>START_ENTRY_2</ConditionToSet>
 			</DialogueOption>			
@@ -78,11 +79,11 @@
 	<DialogueNode>
 		<Name>START_QUESTION_2.1</Name>		
 		<Dialogue>
-			<Page>What?</Page>			
+			<Page>SLATE_DIALOGUE_13</Page>			
 			</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>				
-				<Text>Ah, nothing! Nevermind. See ya!</Text>
+				<Text>SLATE_DIALOGUE_14</Text>
 				<DialogueTarget>START_ENTRY_2</DialogueTarget>
 			</DialogueOption>			
 		</DialogueOptionsList>

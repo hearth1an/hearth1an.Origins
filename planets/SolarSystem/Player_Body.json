@@ -5,7 +5,7 @@
     "Volumes": {
         "creditsVolume": [
             {
-                "deathType": "default",
+                "deathType": "bigBang",
                 "creditsType": "fast",
                 "gameOverText": "ENDING_TEXT",
                 "radius": 10,

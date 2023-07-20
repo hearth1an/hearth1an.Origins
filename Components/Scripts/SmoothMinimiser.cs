@@ -20,8 +20,7 @@ namespace Origins.Components.Scripts
 
         public void StartEvent()
         {
-            StartCoroutine(StartMinimise());
-            SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger").SetActive(true);
+            StartCoroutine(StartMinimise());           
         }
 
         private IEnumerator StartMinimise()

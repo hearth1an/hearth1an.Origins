@@ -7,7 +7,7 @@ namespace Origins.Components.Scripts
     public class EntryTrigger : MonoBehaviour
     {
         public bool hasInteracted = false;
-        public bool exitCheckAllowed = false;
+        public bool exitCheckAllowed = false;        
         public void OnTriggerEnter(Collider hitCollider)
         {
             if (!hasInteracted)
@@ -21,11 +21,13 @@ namespace Origins.Components.Scripts
                     gameObject.SetActive(false);
                 }
             }
-            
+           
+
         }
 
         public void OnTriggerExit(Collider hitCollider)
         {
+
             if (exitCheckAllowed)
             {
                 if (hitCollider.attachedRigidbody == Locator.GetPlayerBody()._rigidbody)

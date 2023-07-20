@@ -1,14 +1,14 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>DIN: What is this? I have never seen anything like it... It is beyond our comprehension...</Text>		
+		<Text>RECORDER_ESSENCE_4</Text>		
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
-		<Text>DIN: It can reappear here at any moment, we need to hur-rr-y...</Text>
+		<Text>RECORDER_ESSENCE_5</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
-		<Text>DIN: ...</Text>
+		<Text>RECORDER_ESSENCE_6</Text>
 	</TextBlock>	
 </NomaiObject>

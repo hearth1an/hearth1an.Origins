@@ -16,7 +16,7 @@ namespace Origins.Components.Scripts
        {
             campfire = SearchUtilities.Find("CaveDimension_Body/Sector/CaveCampfire/Controller_Campfire").GetComponent<Campfire>();
             marshmallowCount = 0;
-            audioClip = Origins.Instance.ModHelper.Assets.GetAudio("planets/Content/Audio/FadeOut.mp3");
+            audioClip = Origins.Instance.ModHelper.Assets.GetAudio("planets/Content/Audio/CampfireSFX.mp3");
             threeMarshmallowsEaten = false;
        }       
 
@@ -37,7 +37,7 @@ namespace Origins.Components.Scripts
                 {
                     SearchUtilities.Find("CaveDimension_Body/Sector/Cave/SecondInteractionTrigger").SetActive(true);
                     WriteUtil.WriteLine("MarshmallowsEaten");                    
-                    PlayerEffectController.PlayAudioExternalOneShot(audioClip, 1f);
+                    PlayerEffectController.PlayAudioExternalOneShot(audioClip, 2f);
                     threeMarshmallowsEaten = true;                   
                 };
             }

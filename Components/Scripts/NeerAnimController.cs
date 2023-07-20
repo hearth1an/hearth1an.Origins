@@ -45,11 +45,13 @@ namespace Origins.Components.Scripts
         private void OnDialogueEnd()
         {
             animator.SetBool("IsDialogueEnded", true);
-            Invoke("StartDialogueEndingEvent", 3);
+            Invoke("StartDialogueEndingEvent", 0.5f);
             dialogueTree.gameObject.SetActive(false);
             PlayerEffectController.Blink(0.5f);
-            Invoke("AfterBlink", 0.5f);
-            
+            //Invoke("AfterBlink", 0.f);
+            AfterBlink();
+
+
         }
 
         private void AfterBlink()

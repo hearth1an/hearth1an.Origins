@@ -91,6 +91,11 @@ namespace Origins.Components
 
             SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/HazardVolume").GetComponent<HazardVolume>()._damagePerSecond = 1;
 
+            var frequency = SearchUtilities.Find("CoreDimension_Body/Sector/EssenceObject_1/Essence_Signal_1").GetComponent<AudioSignal>();
+            PlayerData.ForgetFrequency(frequency._frequency);
+
+            
+
             /*
             var essenceSignal_1 = SearchUtilities.Find("CoreDimension_Body/Sector/Essence_Signal_1");
             var essenceSignal_2 = SearchUtilities.Find("CoreDimension_Body/Sector/Essence_Signal_2");
@@ -133,9 +138,23 @@ namespace Origins.Components
 
         public void AddComponents()
         {
-            SearchUtilities.Find("CaveDimension_Body/Sector/Cave/HornetYellow").AddComponent<FireInteractor>();
-            SearchUtilities.Find("CaveDimension_Body/Sector/Cave/HornetRed").AddComponent<FireInteractor>();
-            SearchUtilities.Find("CaveDimension_Body/Sector/Cave/HornetGreen").AddComponent<FireInteractor>();
+
+            var hornetYellow = SearchUtilities.Find("CaveDimension_Body/Sector/Cave/HornetYellow");
+            hornetYellow.AddComponent<FireInteractor>();
+
+            var hornetRed = SearchUtilities.Find("CaveDimension_Body/Sector/Cave/HornetRed");
+            hornetRed.AddComponent<FireInteractor>();
+
+            var hornetGreen = SearchUtilities.Find("CaveDimension_Body/Sector/Cave/HornetGreen");
+            hornetGreen.AddComponent<FireInteractor>();
+
+            hornetYellow.GetComponent<InteractReceiver>().DisableInteraction();
+            hornetRed.GetComponent<InteractReceiver>().DisableInteraction();
+            hornetGreen.GetComponent<InteractReceiver>().DisableInteraction();           
+
+            SearchUtilities.Find("CaveDimension_Body/Sector/CaveCampfire/AttachPoint").GetComponent<InteractReceiver>()._interactRange = 5;
+
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Slate_Village/ConversationZone_RSci").DestroyAllComponents<InteractReceiver>();
 
             Locator.GetPlayerCamera().gameObject.AddComponent<CameraEffect>();
             SearchUtilities.Find("Player_Body").AddComponent<PsionicInteractor>();
@@ -151,7 +170,7 @@ namespace Origins.Components
                 SearchUtilities.Find("CoreDimension_Body/Sector/Core/FourthInteractionTrigger").AddComponent<EntryTrigger>();
                 SearchUtilities.Find("HeartDimension_Body/Sector/heart/FifthInteractionTrigger").AddComponent<EntryTrigger>();
                 SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger").AddComponent<EntryTrigger>();
-                SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger").GetComponent<EntryTrigger>().exitCheckAllowed = true;
+                SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger").GetComponent<EntryTrigger>().exitCheckAllowed = true;           
 
                 SearchUtilities.Find("CaveDimension_Body/Sector/CaveCampfire/Props_HEA_Campfire/Campfire_Flames").AddComponent<EatenMarshmallowTracker>();
                 SearchUtilities.Find("HeartDimension_Body/Sector/heart/NeerPivot/Neer").AddComponent<HeadController>();
@@ -170,8 +189,7 @@ namespace Origins.Components
             SearchUtilities.Find("CoreDimension_Body/Sector/Recorder_Essence_2").AddComponent<NewHorizons.Components.AddPhysics>();
             SearchUtilities.Find("CoreDimension_Body/Sector/Recorder_Essence_1").AddComponent<NewHorizons.Components.AddPhysics>();
             SearchUtilities.Find("CoreDimension_Body/Sector/Dead_Nomai_1").AddComponent<NewHorizons.Components.AddPhysics>();
-            SearchUtilities.Find("CoreDimension_Body/Sector/Dead_Nomai_2").AddComponent<NewHorizons.Components.AddPhysics>();           
-
+            SearchUtilities.Find("CoreDimension_Body/Sector/Dead_Nomai_2").AddComponent<NewHorizons.Components.AddPhysics>();
         }
 
         public void InvokeEnding()
@@ -210,11 +228,24 @@ namespace Origins.Components
         */
         public void DarkBrambleTransform()
         {
-            SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node").GetComponent<InnerFogWarpVolume>()._warpRadius = 150;
+            SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node").GetComponent<InnerFogWarpVolume>()._warpRadius = 100;
             SearchUtilities.Find("DarkBramble_Body/Sector_DB/Interactables_DB").SetActive(false);
             SearchUtilities.Find("DarkBramble_Body/Atmosphere_DB").SetActive(false);
             SearchUtilities.Find("DarkBramble_Body/Sector_DB/Effects_DB").SetActive(false);
-            SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").GetComponent<OWRenderer>().sharedMaterial.color = new Color(83, 129, 225);
+
+            Color color = new Color(83, 129, 225, 225);
+
+            SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Terrain_DB_BrambleSphere_Inner_v2/fogbackdrop_v2").GetComponent<MeshRenderer>().material.color = color;
+
+            var fogSphere = SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").GetComponent<OWRenderer>();
+            fogSphere.SetColor(color);
+            fogSphere.SetLODActivation(false);
+          
+            
+            // SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").SetActive(false);
+            //SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").GetComponent<OWRenderer>().SetLODFade(20000);
+            
+
 
             var darkBramble = SearchUtilities.Find("DarkBramble_Body/Sector_DB/Interactables_DB/EntranceWarp_ToHub");
             darkBramble.GetComponent<InnerFogWarpVolume>()._warpRadius = 0;

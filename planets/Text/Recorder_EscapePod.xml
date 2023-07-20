@@ -1,30 +1,30 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>ESCALL: It seems like we had an unsuccessful docking. Is everyone okay?</Text>		
+		<Text>RECORDER_POD_1</Text>		
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
-		<Text>DIN: Yes, I'm fine. Where are we?</Text>
+		<Text>RECORDER_POD_2</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
-		<Text>SECCA: I bumped my head a little, but overall, I'll survive. Escall... are you wounded?!</Text>
+		<Text>RECORDER_POD_3</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
-		<Text>ESCALL: I'm afraid so. I got a piece of glass in my chest during the rough landing.</Text>
+		<Text>RECORDER_POD_4</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>5</ID>
-		<Text>DIN: Oh no! We need to assess the surroundings and call for help quickly!</Text>
+		<Text>RECORDER_POD_5</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>6</ID>
-		<Text>SECCA: Din, go search for help. I'll catch up with you soon. I'll set up a distress signal transmitter. Escall, hang in there!</Text>
+		<Text>RECORDER_POD_6</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>7</ID>
-		<Text>ESCALL: It seems like I'm losing some blood. The important thing is not to remove the shard...</Text>
+		<Text>RECORDER_POD_7</Text>
 	</TextBlock>
 </NomaiObject>

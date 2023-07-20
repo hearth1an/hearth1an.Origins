@@ -1,54 +1,54 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>DIN: What is this place? A cave? Everything here is so... different and unlike anything else!</Text>		
+		<Text>RECORDER_CAMPFIRE_1</Text>		
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
-		<Text>SECCA: I agree. I suggest we name the place where our rescue capsule landed <![CDATA[<color=orange>"Big Blackthorn".</color>]]> It's clear that this is an aggressive environment.</Text>
+		<Text>RECORDER_CAMPFIRE_2</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
-		<Text>DIN: Exactly, but this flora around us doesn't belong to the <![CDATA[<color=orange>Big Blackthorn.</color>]]>. There's a possibility that this flora simply turned out to be more aggressive, and now fungi and spores are developing inside the aggressor.</Text>
+		<Text>RECORDER_CAMPFIRE_3</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
-		<Text>SECCA: Yes. It's good that there's at least oxygen here. By the way, did you also hear a voice?</Text>
+		<Text>RECORDER_CAMPFIRE_4</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>5</ID>
-		<Text>DIN: I thought I was imagining it. I could barely hear it. It was asking to be found. Do you think we can trust it?</Text>
+		<Text>RECORDER_CAMPFIRE_5</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>6</ID>
-		<Text>SECCA: Look around, DIN, what else can we do? We can't stay in this cave forever, even though it's beautiful here. He says that to strengthen the connection with him, we need to consume food.</Text>
+		<Text>RECORDER_CAMPFIRE_6</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>7</ID>
-		<Text>DIN: It seems we have few options indeed. Sigh... fine, let's have a bite. We just need to figure out how to start a fire.</Text>
+		<Text>RECORDER_CAMPFIRE_7</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>8</ID>
-		<Text>SECCA: Hypothesis: we could borrow fire from those ghostly creatures flying around the cave. They don't seem aggressive.</Text>
+		<Text>RECORDER_CAMPFIRE_8</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>9</ID>
-		<Text>DIN: Yes, perhaps. I'll gather everything for the fire, and you try to obtain the fire. You'll need a <![CDATA[<color=lightblue>ceremonial vase</color>]]> to carry it to the fire. Due to the high humidity, you'll have to do it quickly.</Text>
+		<Text>RECORDER_CAMPFIRE_9</Text>
     </TextBlock>	
 	<TextBlock>
 		<ID>10</ID>
-		<Text>SECCA: Remind me, where did you leave <![CDATA[<color=lightblue>the ceremonial vase</color>]]>?</Text>
+		<Text>RECORDER_CAMPFIRE_10</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>11</ID>
-		<Text>DIN: I'm still not familiar with this place myself... I left it at <![CDATA[<color=orange>Escall's tomb</color>]]>, in the large stone with holes, to the left of the cave entrance.</Text>
+		<Text>RECORDER_CAMPFIRE_11</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>12</ID>
-		<Text>SECCA: Alright, I'll bring it right away. Here's the plan: I bring the fire, we eat, and we get out of here.</Text>
+		<Text>RECORDER_CAMPFIRE_12</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>13</ID>
-		<Text>DIN: Agreed.</Text>
+		<Text>RECORDER_CAMPFIRE_13</Text>
 	</TextBlock>	
 </NomaiObject>

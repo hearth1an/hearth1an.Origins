@@ -13,6 +13,9 @@ namespace Origins.Components.Scripts
         private Campfire _campfire;
         private InteractReceiver _campfireInteractReciever;
         private FireVaseItem _fireVaseItem;
+        private GameObject _greenFire;
+        private GameObject _yellowFire;
+        private GameObject _redFire;
         
 
         private void Awake()
@@ -23,10 +26,16 @@ namespace Origins.Components.Scripts
             _interactVolume.OnPressInteract += OnPressInteract;
             _campfireInteractReciever = SearchUtilities.Find("CaveDimension_Body/Sector/CaveCampfire/AttachPoint").GetComponent<InteractReceiver>();
             _campfire = SearchUtilities.Find("CaveDimension_Body/Sector/CaveCampfire/Controller_Campfire").GetComponent<Campfire>();
-            _fireVaseItem = SearchUtilities.Find("CaveDimension_Body/Sector/FireVase_New2").GetComponent<FireVaseItem>();            
+            _fireVaseItem = SearchUtilities.Find("CaveDimension_Body/Sector/FireVase_New2").GetComponent<FireVaseItem>();
+
+            _greenFire = SearchUtilities.Find("CaveDimension_Body/Sector/FireVase_New2/FireVase_New/FireGreen");
+            _yellowFire = SearchUtilities.Find("CaveDimension_Body/Sector/FireVase_New2/FireVase_New/FireYellow");
+            _redFire = SearchUtilities.Find("CaveDimension_Body/Sector/FireVase_New2/FireVase_New/FireRed");
 
             interactReceiver = gameObject.GetComponent<InteractReceiver>();
-            interactReceiver.DisableInteraction();
+            interactReceiver.DisableInteraction();            
+            _interactVolume.DisableInteraction();
+
         }
 
         private void Start()
@@ -35,9 +44,8 @@ namespace Origins.Components.Scripts
             _interactVolume.DisableInteraction();
             
             _campfireInteractReciever.gameObject.SetActive(false);
-            _campfireInteractReciever.OnPressInteract += CheckFireColor;
-           
-            this.enabled = false;
+            _campfireInteractReciever.OnPressInteract += CheckFireColor;           
+            
 
             Invoke("ChangePromt", 1f);
         }
@@ -51,7 +59,7 @@ namespace Origins.Components.Scripts
                 {
                     Origins.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
                     {
-                        SearchUtilities.Find("Player_Body/PlayerCamera/ItemCarryTool/ItemSocket/FireVase_New2/FireVase_New/FireGreen").SetActive(true);
+                        _greenFire.SetActive(true);
 
                     });
 
@@ -62,7 +70,7 @@ namespace Origins.Components.Scripts
                 {
                     Origins.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
                     {
-                        SearchUtilities.Find("Player_Body/PlayerCamera/ItemCarryTool/ItemSocket/FireVase_New2/FireVase_New/FireRed").SetActive(true);
+                        _redFire.SetActive(true);
                     });
 
                     WriteUtil.WriteError("Red");
@@ -71,7 +79,7 @@ namespace Origins.Components.Scripts
                 {
                     Origins.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
                     {
-                        SearchUtilities.Find("Player_Body/PlayerCamera/ItemCarryTool/ItemSocket/FireVase_New2/FireVase_New/FireYellow").SetActive(true);
+                        _yellowFire.SetActive(true);
                     });
 
                     WriteUtil.WriteError("Yellow");
@@ -91,9 +99,9 @@ namespace Origins.Components.Scripts
 
         private void DisableFlames()
         {
-            SearchUtilities.Find("Player_Body/PlayerCamera/ItemCarryTool/ItemSocket/FireVase_New2/FireVase_New/FireGreen").SetActive(false);
-            SearchUtilities.Find("Player_Body/PlayerCamera/ItemCarryTool/ItemSocket/FireVase_New2/FireVase_New/FireYellow").SetActive(false);
-            SearchUtilities.Find("Player_Body/PlayerCamera/ItemCarryTool/ItemSocket/FireVase_New2/FireVase_New/FireRed").SetActive(false);
+            _greenFire.SetActive(false);
+            _redFire.SetActive(false);
+            _yellowFire.SetActive(false);
 
             if (_campfire.GetState() == Campfire.State.LIT)
             {
@@ -119,28 +127,26 @@ namespace Origins.Components.Scripts
 
         private void CheckFireColor()
         {
-            var GreenFlame = SearchUtilities.Find("Player_Body/PlayerCamera/ItemCarryTool/ItemSocket/FireVase_New2/FireVase_New/FireGreen");
-            var RedFlame = SearchUtilities.Find("Player_Body/PlayerCamera/ItemCarryTool/ItemSocket/FireVase_New2/FireVase_New/FireRed");
-            var YellowFlame = SearchUtilities.Find("Player_Body/PlayerCamera/ItemCarryTool/ItemSocket/FireVase_New2/FireVase_New/FireYellow");
+            
 
             if (gameObject != null)
             {
-                if (GreenFlame.activeSelf)
+                if (_greenFire.activeSelf)
                 {
-                    CopyColorFrom(GreenFlame);
+                    CopyColorFrom(_greenFire);
 
                     WriteUtil.WriteError("Greem");
 
                 }
-                else if (RedFlame.activeSelf)
+                else if (_redFire.activeSelf)
                 {
-                    CopyColorFrom(RedFlame);
+                    CopyColorFrom(_redFire);
 
                     WriteUtil.WriteError("Red");
                 }
-                else if (YellowFlame.activeSelf)
+                else if (_yellowFire.activeSelf)
                 {
-                    CopyColorFrom(YellowFlame);
+                    CopyColorFrom(_yellowFire);
 
                     WriteUtil.WriteError("Yellow");
                 }
