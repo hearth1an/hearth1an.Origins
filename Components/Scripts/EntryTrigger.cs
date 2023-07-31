@@ -7,10 +7,11 @@ namespace Origins.Components.Scripts
     public class EntryTrigger : MonoBehaviour
     {
         public bool hasInteracted = false;
-        public bool exitCheckAllowed = false;        
+        public bool exitCheckAllowed = false;  
+        public bool isProxFixer = false;
         public void OnTriggerEnter(Collider hitCollider)
         {
-            if (!hasInteracted)
+            if (!hasInteracted && !isProxFixer)
             {
                 if (hitCollider.attachedRigidbody == Locator.GetPlayerBody()._rigidbody)
                 {
@@ -21,6 +22,14 @@ namespace Origins.Components.Scripts
                     gameObject.SetActive(false);
                 }
             }
+
+            if (isProxFixer)
+            {
+                if (hitCollider.attachedRigidbody == Locator.GetPlayerBody()._rigidbody || hitCollider.attachedRigidbody == Locator.GetShipBody()._rigidbody)
+                {
+                    SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").SetActive(true);
+                }
+            }
            
 
         }
@@ -28,11 +37,19 @@ namespace Origins.Components.Scripts
         public void OnTriggerExit(Collider hitCollider)
         {
 
-            if (exitCheckAllowed)
+            if (exitCheckAllowed && !isProxFixer)
             {
                 if (hitCollider.attachedRigidbody == Locator.GetPlayerBody()._rigidbody)
                 {
                     FindObjectOfType<TransformController>().InvokeEnding();
+                }
+            }
+
+            if (isProxFixer)
+            {
+                if (hitCollider.attachedRigidbody == Locator.GetPlayerBody()._rigidbody || hitCollider.attachedRigidbody == Locator.GetShipBody()._rigidbody)
+                {
+                    SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").SetActive(false);
                 }
             }
 

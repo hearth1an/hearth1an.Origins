@@ -24,6 +24,7 @@ namespace Origins.Components.Scripts
             _interactVolume._textID = UITextType.LightCampfirePrompt;
             _interactVolume._resetInteractionTime = 16f;
             _interactVolume.OnPressInteract += OnPressInteract;
+            _interactVolume.OnGainFocus += OnGainFocus;
             _campfireInteractReciever = SearchUtilities.Find("CaveDimension_Body/Sector/CaveCampfire/AttachPoint").GetComponent<InteractReceiver>();
             _campfire = SearchUtilities.Find("CaveDimension_Body/Sector/CaveCampfire/Controller_Campfire").GetComponent<Campfire>();
             _fireVaseItem = SearchUtilities.Find("CaveDimension_Body/Sector/FireVase_New2").GetComponent<FireVaseItem>();
@@ -44,10 +45,24 @@ namespace Origins.Components.Scripts
             _interactVolume.DisableInteraction();
             
             _campfireInteractReciever.gameObject.SetActive(false);
-            _campfireInteractReciever.OnPressInteract += CheckFireColor;           
-            
+            _campfireInteractReciever.OnPressInteract += CheckFireColor; 
 
             Invoke("ChangePromt", 1f);
+        }
+
+        private void OnGainFocus()
+        {
+            if (_fireVaseItem != null)
+            {
+                if (!_fireVaseItem.isPickedUp)
+                {
+                    _interactVolume.DisableInteraction();
+                }
+                else
+                {
+                    _interactVolume.EnableInteraction();
+                }
+            }
         }
         
         private void OnPressInteract()

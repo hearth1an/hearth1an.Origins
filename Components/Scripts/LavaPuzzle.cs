@@ -18,7 +18,8 @@ namespace Origins.Components.Scripts
             shipBody = Locator.GetShipBody();
             shipDmgController = Locator.GetShipBody().GetComponent<ShipDamageController>();
 
-            moltenCore.transform.localPosition = new Vector3(16.1794f, -599.5986f, 20.0453f);
+            moltenCore.transform.localPosition = new Vector3(16.1794f, -607.5986f, 22.1453f);
+
         }
 
         private void Update()

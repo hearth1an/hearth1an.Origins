@@ -22,6 +22,7 @@ namespace Origins.Components.Scripts
             animator = GetComponent<Animator>();
             dialogueTree = SearchUtilities.Find("HeartDimension_Body/Sector/heart/NeerPivot/Neer/Ch50/ConversationZone").GetComponent<CharacterDialogueTree>();
 
+            dialogueTree._timeFrozen = false;
             distortionEffect = SearchUtilities.Find("HeartDimension_Body/Sector/heart/NeerPivot/CastSpell");
             gatesReveal = SearchUtilities.Find("HeartDimension_Body/Sector/heart/Gates");
             distortionSphere = SearchUtilities.Find("Player_Body/DistortionSphere");
@@ -40,6 +41,10 @@ namespace Origins.Components.Scripts
             PlayerEffectController.Blink(0.5f);
             Invoke("AfterBlink", 0.5f);            
             neerAudioSource.PlayOneShot(kneeFoley);
+            
+
+            PlayerData.GetFreezeTimeWhileReadingConversations();
+            
         }
 
         private void OnDialogueEnd()

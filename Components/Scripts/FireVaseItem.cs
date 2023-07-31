@@ -11,6 +11,7 @@ namespace Origins.Components.Scripts
 		private InteractReceiver _flameGreen;
 		private InteractReceiver _flameRed;
 		private InteractReceiver _flameYellow;
+		public bool isPickedUp;
 		
 		public override string GetDisplayName( )
 		{
@@ -41,6 +42,7 @@ namespace Origins.Components.Scripts
 			_flameGreen.gameObject.GetComponent<FireInteractor>().enabled = false;
 			_flameRed.gameObject.GetComponent<FireInteractor>().enabled = false;
 			_flameYellow.gameObject.GetComponent<FireInteractor>().enabled = false;
+			isPickedUp = false;
 		}
 
 		public override void PickUpItem(Transform holdTranform)
@@ -49,6 +51,7 @@ namespace Origins.Components.Scripts
 			base.PickUpItem(holdTranform);
 			transform.localPosition = new Vector3(0f, -0.4f, 0f);
 
+			isPickedUp = true;
 			_flameGreen.EnableInteraction();
 			_flameRed.EnableInteraction();
 			_flameYellow.EnableInteraction();

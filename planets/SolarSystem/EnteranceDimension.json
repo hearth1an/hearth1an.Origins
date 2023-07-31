@@ -37,9 +37,9 @@
 				},
 				"hasFogLight": true,
 				"position": {
-					"x": 27.6723,
-					"y": -632.1356,
-					"z": 35.4008
+					"x": 21.6723,
+					"y": -650.0437,
+					"z": 34.4008
 				},
 				"rotation": {
 					"x": 89.9011,
@@ -162,7 +162,7 @@
 					"x": 38,
 					"y": -339,
 					"z": -33
-				},				
+				},
 				"rename": "RecorderFlare_1"
 			},
 			{
@@ -183,13 +183,22 @@
 			{
 				"path": "DB_VesselDimension_Body/Sector_VesselDimension/Interactables_VesselDimension/UNSORTED/Prefab_NOM_Lamp_Glow_Vessel_Wall (25)",
 				"position": {
-					"x": 25,
-					"y": -346,
-					"z": -29
+					"x": 22,
+					"y": -341,
+					"z": -19
 				},
-				
+
 				"rename": "RecorderFlare_3"
 			},
+			{
+				"path": "DB_VesselDimension_Body/Sector_VesselDimension/Interactables_VesselDimension/UNSORTED/Prefab_NOM_Lamp_Glow_Vessel_Wall (25)",
+				"position": {
+					"x": 40,
+					"y": -320,
+					"z": -30
+				},
+				"rename": "RecorderFlare_4"
+			},			
 			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/DistressBeaconTransmitter",
 				"parentPath": "Sector/EscapePod",

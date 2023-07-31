@@ -13,6 +13,7 @@
 			},
 			"fogDensity": 7.0,
 			"linksTo": "DarkNest_To_Cave_Node",
+			"allowedEntrances": [1],
 			"radius": 250.0,
 			"vinePrefab": "none"
 		}		
@@ -213,6 +214,7 @@
 				"radius": 500
 			}
 		],
+		
 
 		"audioVolumes": [
 			{
@@ -221,6 +223,50 @@
 				"track": "music",
 				"volume": 0.7,
 				"radius": 400.0
+			},
+			{
+				"audio": "planets/Content/Audio/Wings.mp3",
+				"parentPath": "Sector/Cave/HornetYellow",
+				"volume": 1,
+				"radius": 30,
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"clipSelection": "random",
+				"loop": true,
+				"rename": "YellowWings",
+				"priority": 3
+			},
+			{
+				"audio": "planets/Content/Audio/Wings.mp3",
+				"parentPath": "Sector/Cave/HornetGreen",
+				"volume": 1,
+				"radius": 30,
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"clipSelection": "random",
+				"loop": true,
+				"rename": "GreenWings",
+				"priority": 3
+			},
+			{
+				"audio": "planets/Content/Audio/Wings.mp3",
+				"parentPath": "Sector/Cave/HornetRed",
+				"volume": 1,
+				"radius": 30,
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"clipSelection": "random",
+				"loop": true,
+				"rename": "RedWings",
+				"priority": 3
 			}
 		],
 		"oxygenVolumes": [

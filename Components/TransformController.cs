@@ -87,14 +87,30 @@ namespace Origins.Components
             deadNomai_2.AddComponent<InteractReceiver>().SetPromptText(UITextType.RefillPrompt_0);
             deadNomai_2.AddComponent<PlayerRecoveryPoint>();
 
-            SearchUtilities.Find("EnteranceDimension_Body/Sector/MoltenCore").transform.localPosition = new Vector3(24.345f, -623.6233f, 35.4008f);
-
+            SearchUtilities.Find("EnteranceDimension_Body/Sector/MoltenCore").transform.localPosition = new Vector3(16.1794f, -607.5986f, 22.1453f);
+            SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/NeerPivot").transform.localPosition = new Vector3(-0.0007f, 0.2314f, -0.2178f);
             SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/HazardVolume").GetComponent<HazardVolume>()._damagePerSecond = 1;
 
             var frequency = SearchUtilities.Find("CoreDimension_Body/Sector/EssenceObject_1/Essence_Signal_1").GetComponent<AudioSignal>();
             PlayerData.ForgetFrequency(frequency._frequency);
 
-            
+
+
+            var darkBramble = new GameObject("ProxyTrigger");
+            darkBramble.transform.parent = SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").transform.parent;
+            darkBramble.transform.localPosition = new Vector3(0, 0, 0);
+
+
+            darkBramble.AddComponent<SphereCollider>();
+            darkBramble.GetComponent<SphereCollider>().radius = 1900;
+            darkBramble.GetComponent<SphereCollider>().isTrigger = true;
+
+            darkBramble.AddComponent<EntryTrigger>();            
+            darkBramble.GetComponent<EntryTrigger>().isProxFixer = true;
+
+
+
+            SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").SetActive(false);
 
             /*
             var essenceSignal_1 = SearchUtilities.Find("CoreDimension_Body/Sector/Essence_Signal_1");
@@ -131,7 +147,7 @@ namespace Origins.Components
             SearchUtilities.Find("DarkNestDimension_Body/Sector/DarkNest_To_Core_Node/Essence_Signal_1").SetActive(false);
             SearchUtilities.Find("DarkNestDimension_Body/Sector/DarkNest_To_Core_Node/Essence_Signal_2").SetActive(false);
             SearchUtilities.Find("DarkNestDimension_Body/Sector/DarkNest_To_Core_Node/Essence_Signal_3").SetActive(false);
-
+            SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").SetActive(false);
 
 
         }
@@ -148,10 +164,10 @@ namespace Origins.Components
             var hornetGreen = SearchUtilities.Find("CaveDimension_Body/Sector/Cave/HornetGreen");
             hornetGreen.AddComponent<FireInteractor>();
 
-            hornetYellow.GetComponent<InteractReceiver>().DisableInteraction();
-            hornetRed.GetComponent<InteractReceiver>().DisableInteraction();
-            hornetGreen.GetComponent<InteractReceiver>().DisableInteraction();           
+            PlayerData._settingsSave.freezeTimeWhileReadingConversations = false;
 
+ 
+             
             SearchUtilities.Find("CaveDimension_Body/Sector/CaveCampfire/AttachPoint").GetComponent<InteractReceiver>()._interactRange = 5;
 
             SearchUtilities.Find("TimberHearth_Body/Sector_TH/Slate_Village/ConversationZone_RSci").DestroyAllComponents<InteractReceiver>();
@@ -170,7 +186,7 @@ namespace Origins.Components
                 SearchUtilities.Find("CoreDimension_Body/Sector/Core/FourthInteractionTrigger").AddComponent<EntryTrigger>();
                 SearchUtilities.Find("HeartDimension_Body/Sector/heart/FifthInteractionTrigger").AddComponent<EntryTrigger>();
                 SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger").AddComponent<EntryTrigger>();
-                SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger").GetComponent<EntryTrigger>().exitCheckAllowed = true;           
+                SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger").GetComponent<EntryTrigger>().exitCheckAllowed = true;
 
                 SearchUtilities.Find("CaveDimension_Body/Sector/CaveCampfire/Props_HEA_Campfire/Campfire_Flames").AddComponent<EatenMarshmallowTracker>();
                 SearchUtilities.Find("HeartDimension_Body/Sector/heart/NeerPivot/Neer").AddComponent<HeadController>();
@@ -178,6 +194,10 @@ namespace Origins.Components
                 SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/NeerPivot/Neer").AddComponent<HeadController>();
 
                 SearchUtilities.Find("EnteranceDimension_Body/Sector/Recorder_EnteranceNode/PointLight_NOM_Recorder").GetComponent<Light>().intensity = 3f;
+
+                hornetYellow.GetComponent<InteractReceiver>().DisableInteraction();
+                hornetRed.GetComponent<InteractReceiver>().DisableInteraction();
+                hornetGreen.GetComponent<InteractReceiver>().DisableInteraction();
             });
 
         }
@@ -239,8 +259,9 @@ namespace Origins.Components
 
             var fogSphere = SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").GetComponent<OWRenderer>();
             fogSphere.SetColor(color);
-            fogSphere.SetLODActivation(false);
+           
           
+
             
             // SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").SetActive(false);
             //SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").GetComponent<OWRenderer>().SetLODFade(20000);
@@ -249,7 +270,8 @@ namespace Origins.Components
 
             var darkBramble = SearchUtilities.Find("DarkBramble_Body/Sector_DB/Interactables_DB/EntranceWarp_ToHub");
             darkBramble.GetComponent<InnerFogWarpVolume>()._warpRadius = 0;
-            darkBramble.SetActive(false);
+
+           
         }
     }   
 }
