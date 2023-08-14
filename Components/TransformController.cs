@@ -7,7 +7,6 @@ namespace Origins.Components
 {
     public class TransformController : MonoBehaviour
     {
-
         public void TransformThings()
         {
            DoTransform();

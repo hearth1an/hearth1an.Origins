@@ -60,8 +60,8 @@ namespace Origins.Components.Scripts
 		private void StartMinimise()
         {
 			SearchUtilities.Find("HeartDimensionSmall_Body/Sector").GetComponent<SmoothMinimiser>().StartEvent();
-			hazard.SetActive(true);
-			Invoke("TriggerEnding", 10);
+			//hazard.SetActive(true);
+			Invoke("TriggerEnding", 20);
 
 		}
 

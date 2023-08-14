@@ -66,6 +66,7 @@ namespace Origins
             Origins.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
                 controllers.AddComponent<TransformController>().TransformThings();
+                controllers.AddComponent<QuantumMoonFixer>();
                 controllers.AddComponent<LavaPuzzle>().Start();
 
             });
