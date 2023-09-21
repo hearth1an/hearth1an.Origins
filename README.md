@@ -11,7 +11,7 @@ This mod contains major spoilers for Outer Wilds original game and Echoes Of the
 
 # Credits
 Author:
-- [heart1an](https://github.com/hearth1an)
+- [hearth1an](https://github.com/hearth1an)
   
 # Voice by:
 - Music Turtle
