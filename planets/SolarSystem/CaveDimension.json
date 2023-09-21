@@ -45,7 +45,7 @@
 				},
 				"rename": "Cave",
 				"scale": 3000,
-				"keepLoaded": true
+				//"keepLoaded": true
 			},
 			{
 				"assetBundle": "planets/Assets/cave_dimension_assets",

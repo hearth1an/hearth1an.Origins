@@ -46,12 +46,11 @@ namespace Origins.Components.Scripts
                 {
 					SearchUtilities.Find("HeartDimensionSmall_Body/Sector/BrambleCrash_SFX").SetActive(true);
 					sixthTrigger.SetActive(true);
-					
-					//SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/backup/rings_low/GameObject/ring1_low").AddComponent<NewHorizons.Components.AddPhysics>();
+					sixthTrigger.GetComponent<SphereCollider>().enabled = true;
+					SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/backup/rings_low/GameObject/ring1_low").AddComponent<NewHorizons.Components.AddPhysics>();
+					SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/ProxyTrigger").GetComponent<EntryTrigger>().isEnding = true;
 					Invoke("StartMinimise", 10f);
 					wasTaken = true;
-
-
                 }
             }
 
@@ -60,12 +59,11 @@ namespace Origins.Components.Scripts
 		private void StartMinimise()
         {
 			SearchUtilities.Find("HeartDimensionSmall_Body/Sector").GetComponent<SmoothMinimiser>().StartEvent();
-			//hazard.SetActive(true);
-			Invoke("TriggerEnding", 20);
+			//hazard.SetActive(true);			
 
 		}
 
-        private void TriggerEnding() => FindObjectOfType<TransformController>().InvokeEnding();
+       
 
 		public override void SocketItem(Transform socketTransform, Sector sector)
 		{

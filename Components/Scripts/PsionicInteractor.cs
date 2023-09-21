@@ -59,6 +59,7 @@ namespace Origins.Components.Scripts
             _fifthInteraction = SearchUtilities.Find("HeartDimension_Body/Sector/heart/FifthInteractionTrigger");
             _sixthInteraction = SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger");
 
+           
             firstNotificationSFX = Origins.Instance.ModHelper.Assets.GetAudio("planets/Content/Audio/FirstInteraction.mp3");
             secondNotificationSFX = Origins.Instance.ModHelper.Assets.GetAudio("planets/Content/Audio/SecondInteraction.mp3");
             thirdNotificationSFX = Origins.Instance.ModHelper.Assets.GetAudio("planets/Content/Audio/ThirdInteraction.mp3");
@@ -80,6 +81,8 @@ namespace Origins.Components.Scripts
 
             base.enabled = true;
         }
+
+        
 
         public void StartPsionicEvent()
         {

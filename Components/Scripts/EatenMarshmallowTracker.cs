@@ -38,7 +38,8 @@ namespace Origins.Components.Scripts
                     SearchUtilities.Find("CaveDimension_Body/Sector/Cave/SecondInteractionTrigger").SetActive(true);
                     WriteUtil.WriteLine("MarshmallowsEaten");                    
                     PlayerEffectController.PlayAudioExternalOneShot(audioClip, 2f);
-                    threeMarshmallowsEaten = true;                   
+                    threeMarshmallowsEaten = true;
+                    SearchUtilities.Find("CaveDimension_Body/Sector/Cave/SecondInteractionTrigger").GetComponent<BoxCollider>().enabled = true;
                 };
             }
 

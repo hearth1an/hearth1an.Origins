@@ -10,13 +10,14 @@ namespace Origins.Components
         public void TransformThings()
         {
            DoTransform();
-           AddComponents();
-          // Invoke("AddPhysics", 3f);
-        }
+           AddComponents();          
+        }        
 
-        private void MakeFogDarker(string spherePath)
+        private void AddLights()
         {
-            SearchUtilities.Find(spherePath).GetComponent<PlanetaryFogController>()._fogColorRampIntensity = -10f;
+            var recorderLights = SearchUtilities.Find("CoreDimension_Body/Sector/Recorder_PRE_Essence/PointLight_NOM_Recorder").GetComponent<Light>();
+            recorderLights.range = 15f;
+            recorderLights.intensity = 10f;
         }
 
         public void DoTransform()
@@ -84,11 +85,31 @@ namespace Origins.Components
             deadNomai_1.AddComponent<InteractReceiver>().SetPromptText(UITextType.RefillPrompt_0);
             deadNomai_1.AddComponent<PlayerRecoveryPoint>();
             deadNomai_2.AddComponent<InteractReceiver>().SetPromptText(UITextType.RefillPrompt_0);
-            deadNomai_2.AddComponent<PlayerRecoveryPoint>();
+            deadNomai_2.AddComponent<PlayerRecoveryPoint>();            
+
+            
 
             SearchUtilities.Find("EnteranceDimension_Body/Sector/MoltenCore").transform.localPosition = new Vector3(16.1794f, -607.5986f, 22.1453f);
             SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/NeerPivot").transform.localPosition = new Vector3(-0.0007f, 0.2314f, -0.2178f);
+            //SearchUtilities.Find("CaveDimension_Body/Sector/Cave/SecondInteractionTrigger").transform.localPosition = new Vector3(0f, 0f, 0f);
             SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/HazardVolume").GetComponent<HazardVolume>()._damagePerSecond = 1;
+
+
+            /*
+            SearchUtilities.Find("CaveDimension_Body/Sector/Cave/SecondInteractionTrigger").transform.localScale = new Vector3(10000, 10000, 10000);
+            SearchUtilities.Find("CoreDimension_Body/Sector/Core/ThirdInteractionTrigger").transform.localScale = new Vector3(100, 100, 100);
+            SearchUtilities.Find("CoreDimension_Body/Sector/Core/FourthInteractionTrigger").transform.localScale = new Vector3(100000, 100000, 100000);
+            SearchUtilities.Find("HeartDimension_Body/Sector/heart/FifthInteractionTrigger").transform.localScale = new Vector3(1000, 1000, 1000);
+            SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger").transform.localScale = new Vector3(1000, 1000, 1000);
+
+            /*
+            SearchUtilities.Find("CaveDimension_Body/Sector/Cave/SecondInteractionTrigger").GetComponent<BoxCollider>().enabled = true;
+            SearchUtilities.Find("CoreDimension_Body/Sector/Core/ThirdInteractionTrigger").GetComponent<BoxCollider>().enabled = true;
+            SearchUtilities.Find("CoreDimension_Body/Sector/Core/FourthInteractionTrigger").GetComponent<BoxCollider>().enabled = true;
+            SearchUtilities.Find("HeartDimension_Body/Sector/heart/FifthInteractionTrigger").GetComponent<BoxCollider>().enabled = true;
+            SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger").GetComponent<BoxCollider>().enabled = true;
+            */
+
 
             var frequency = SearchUtilities.Find("CoreDimension_Body/Sector/EssenceObject_1/Essence_Signal_1").GetComponent<AudioSignal>();
             PlayerData.ForgetFrequency(frequency._frequency);
@@ -105,11 +126,18 @@ namespace Origins.Components
             darkBramble.GetComponent<SphereCollider>().isTrigger = true;
 
             darkBramble.AddComponent<EntryTrigger>();            
-            darkBramble.GetComponent<EntryTrigger>().isProxFixer = true;
+            darkBramble.GetComponent<EntryTrigger>().isProxFixer = true;            
+
+            var moltenCore = SearchUtilities.Find("EnteranceDimension_Body/Sector/MoltenCore");
+            moltenCore.AddComponent<SphereCollider>();
+            moltenCore.GetComponent<SphereCollider>().radius = 1;
+            moltenCore.GetComponent<SphereCollider>().isTrigger = true;
+            moltenCore.AddComponent<EntryTrigger>();
+            moltenCore.GetComponent<EntryTrigger>().isLavaPuzzle = true;
 
 
-
-            SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").SetActive(false);
+            //SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").SetActive(false);
+            SearchUtilities.Find("HeartDimensionSmall_Body/Sector/BrambleCrash_SFX").SetActive(false);
 
             /*
             var essenceSignal_1 = SearchUtilities.Find("CoreDimension_Body/Sector/Essence_Signal_1");
@@ -127,9 +155,8 @@ namespace Origins.Components
             essenceSignal_1.transform.localScale = new Vector3(1, 1, 1);
             essenceSignal_2.transform.localScale = new Vector3(1, 1, 1);
             essenceSignal_3.transform.localScale = new Vector3(1, 1, 1);
-            */
-
-            SearchUtilities.Find("HeartDimensionSmall_Body/Sector/BrambleCrash_SFX").SetActive(false);
+           
+            
             SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/Node_QM/Essence_Signal_1").SetActive(false);
             SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/Node_QM/Essence_Signal_2").SetActive(false);
             SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/Node_QM/Essence_Signal_3").SetActive(false);
@@ -147,9 +174,11 @@ namespace Origins.Components
             SearchUtilities.Find("DarkNestDimension_Body/Sector/DarkNest_To_Core_Node/Essence_Signal_2").SetActive(false);
             SearchUtilities.Find("DarkNestDimension_Body/Sector/DarkNest_To_Core_Node/Essence_Signal_3").SetActive(false);
             SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").SetActive(false);
+             */
 
 
         }
+
 
         public void AddComponents()
         {
@@ -174,18 +203,20 @@ namespace Origins.Components
             Locator.GetPlayerCamera().gameObject.AddComponent<CameraEffect>();
             SearchUtilities.Find("Player_Body").AddComponent<PsionicInteractor>();
             SearchUtilities.Find("CaveDimension_Body/Sector/Cave/FirstInteractionTrigger").AddComponent<EntryTrigger>();
-            SearchUtilities.Find("CaveDimension_Body/Sector/Cave/SecondInteractionTrigger").AddComponent<EntryTrigger>();
+            SearchUtilities.Find("CaveDimension_Body/Sector/Cave/SecondInteractionTrigger").AddComponent<EntryTrigger>().enabled = true;
             SearchUtilities.Find("HeartDimensionSmall_Body/Sector").AddComponent<EntryTrigger>().exitCheckAllowed = true;
             SearchUtilities.Find("CaveDimension_Body/Sector/Cave/SecondInteractionTrigger").SetActive(false);
 
             Origins.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
 
-                SearchUtilities.Find("ThirdInteractionTrigger").AddComponent<EntryTrigger>();
-                SearchUtilities.Find("CoreDimension_Body/Sector/Core/FourthInteractionTrigger").AddComponent<EntryTrigger>();
-                SearchUtilities.Find("HeartDimension_Body/Sector/heart/FifthInteractionTrigger").AddComponent<EntryTrigger>();
-                SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger").AddComponent<EntryTrigger>();
+                SearchUtilities.Find("CoreDimension_Body/Sector/Core/ThirdInteractionTrigger").AddComponent<EntryTrigger>().enabled = true;
+                SearchUtilities.Find("CoreDimension_Body/Sector/Core/FourthInteractionTrigger").AddComponent<EntryTrigger>().enabled = true;
+                SearchUtilities.Find("HeartDimension_Body/Sector/heart/FifthInteractionTrigger").AddComponent<EntryTrigger>().enabled = true;
+                SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger").AddComponent<EntryTrigger>().enabled = true;
                 SearchUtilities.Find("HeartDimensionSmall_Body/Sector/heart/SixthInteractionTrigger").GetComponent<EntryTrigger>().exitCheckAllowed = true;
+
+                SearchUtilities.Find("CoreDimension_Body/Sector/Core/FourthInteractionTrigger").GetComponent<SphereCollider>().radius = 10000f;
 
                 SearchUtilities.Find("CaveDimension_Body/Sector/CaveCampfire/Props_HEA_Campfire/Campfire_Flames").AddComponent<EatenMarshmallowTracker>();
                 SearchUtilities.Find("HeartDimension_Body/Sector/heart/NeerPivot/Neer").AddComponent<HeadController>();
@@ -213,7 +244,7 @@ namespace Origins.Components
 
         public void InvokeEnding()
         {
-            Invoke("TriggerEnding", 5);
+            Invoke("TriggerEnding", 2);
             SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects").SetActive(false);
         }
 

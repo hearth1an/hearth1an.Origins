@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using NewHorizons.Utility;
+using Origins.Utility;
 
 namespace Origins.Components.Scripts
 {
@@ -13,11 +14,16 @@ namespace Origins.Components.Scripts
         private GameObject modThingie;
         private GameObject dbStateObject;
         private bool isActiveState;
+       
 
         public void Awake()
         {
             modThingie = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/Node_QM");
             dbStateObject = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_DB");
+            modThingie.SetActive(false);
+
+            WriteUtil.WriteLine("QM fixer added");
+
         }
 
         private void Update()
@@ -27,15 +33,23 @@ namespace Origins.Components.Scripts
                 if (dbStateObject.activeSelf)
                 {
                     isActiveState = true;
-                    if (isActiveState)
+                    if (isActiveState && !modThingie.activeSelf)
                     {
+                        WriteUtil.WriteLine("DB state of QM active, thing enabled");
                         modThingie.SetActive(true);
-                    }
-                    else
+                       
+                    }                   
+                }
+                if (!dbStateObject.activeSelf)
+                {
+                    isActiveState = false;
+                    if (!isActiveState && modThingie.activeSelf)
                     {
+                        WriteUtil.WriteLine("DB state of QM disabled, thing disabled");
                         modThingie.SetActive(false);
-                    }
-                }                
+                       
+                    }                   
+                }
 
             }
 

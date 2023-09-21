@@ -50,6 +50,11 @@
 
 		"TEXT_RIP": "<![CDATA[<b>Here lies the nomai Escall. He was always a true Nomai and remained true to himself until the end.</b>]]>",
 
+		"RECORDER_PRE_ESSENCE_1": "SECCA: D-Din, do you see what I see?",
+		"RECORDER_PRE_ESSENCE_2": "DIN:I can confirm. I see it too. We need to collect the Essence. I assume it's inside that node. We don't know what life form it is, but I'd recommend avoiding its tentacles.",
+		"RECORDER_PRE_ESSENCE_3": "SECCA:I... I... okay, we can split up to collect it faster. Are you ready?",
+		"RECORDER_PRE_ESSENCE_4": "DIN: Y-yes..! We don't know what to expect. We need to allow <![CDATA[<b>our suits to be reused.</b>]]>",
+		"RECORDER_PRE_ESSENCE_5": "SECCA: Done. Quick, let's move on!",
 
 		"RECORDER_ESSENCE_1": "SECCA: The voice commanded us to collect it, but the creature's tentacles are dangerous. They cause excruciating pain upon approach!",
 		"RECORDER_ESSENCE_2": "SECCA: Din, it was a mistake... we... separated. I'm afraid I can no longer... continue the journey...",

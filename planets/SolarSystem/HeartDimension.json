@@ -61,8 +61,8 @@
 					"z": 180
 				},
 				"rename": "heart",
-				"scale": 1000,
-				"keepLoaded": true
+				"scale": 1000
+				//"keepLoaded": true
 			},
 			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/GravityCrystals/OtherComponentsGroup/Prefab_NOM_GravityCrystal",

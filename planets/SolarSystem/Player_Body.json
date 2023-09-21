@@ -5,9 +5,9 @@
     "Volumes": {
         "creditsVolume": [
             {
-                "deathType": "bigBang",
+                "deathType": "meditation",
                 "creditsType": "fast",
-                "gameOverText": "ENDING_TEXT",
+                "gameOverText": "ENDING_TEXT",               
                 "radius": 10,
                 "isRelativeToParent": true,
                 "position": {

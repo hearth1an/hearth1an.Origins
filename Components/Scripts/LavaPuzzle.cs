@@ -23,10 +23,11 @@ namespace Origins.Components.Scripts
         }
 
         private void Update()
-        {     
+        {    
+            /*
             if (moltenCore != null && !isPuzzleSolved)
             {
-                if (shipDmgController._cockpitDetached && !SearchUtilities.Find("Module_Cockpit_Body").activeSelf && moltenCore.activeSelf  )
+                if (shipDmgController._cockpitDetached && !SearchUtilities.Find("Module_Cockpit_Body").activeSelf && moltenCore.activeSelf || !shipBody.isActiveAndEnabled && moltenCore.activeSelf)
                 {
                     moltenCore.SetActive(false);
                     WriteUtil.WriteLine("Lava puzzle");
@@ -36,6 +37,7 @@ namespace Origins.Components.Scripts
 
                 }
             }
+            */
         }
     }
 }

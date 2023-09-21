@@ -76,8 +76,8 @@
 					"z": 0
 				},
 				"rename": "Core",
-				"scale": 0.15,
-				"keepLoaded": true
+				"scale": 0.15
+				//"keepLoaded": true
 			},
 			{
 				"assetBundle": "planets/Assets/core_dimension",
@@ -88,8 +88,8 @@
 					"z": -63
 				},
 				"rename": "EssenceObject_1",
-				"scale": 20,
-				"keepLoaded": true
+				"scale": 20
+				//"keepLoaded": true
 			},
 			{
 				"assetBundle": "planets/Assets/core_dimension",
@@ -99,8 +99,8 @@
 					"y": -109.8,
 					"z": 550.15
 				},
-				"rename": "EssenceObject_2",
-				"keepLoaded": true
+				"rename": "EssenceObject_2"
+				//"keepLoaded": true
 			},
 			{
 				"assetBundle": "planets/Assets/core_dimension",
@@ -110,8 +110,8 @@
 					"y": 217.94,
 					"z": -72.42
 				},
-				"rename": "EssenceObject_3",
-				"keepLoaded": true
+				"rename": "EssenceObject_3"
+				//"keepLoaded": true
 			},
 			{
 
@@ -133,6 +133,49 @@
 				},
 				"rename": "Dead_Nomai_2"
 
+			},
+			{
+				"path": "DB_VesselDimension_Body/Sector_VesselDimension/Interactables_VesselDimension/UNSORTED/Prefab_NOM_Lamp_Glow_Vessel_Wall (25)",
+				"position": {
+					"x": -1070.175,
+					"y": -158.13,
+					"z": -243.15
+				},
+				"rename": "RecorderFlare_1"
+			},
+			{
+				"path": "DB_VesselDimension_Body/Sector_VesselDimension/Interactables_VesselDimension/UNSORTED/Prefab_NOM_Lamp_Glow_Vessel_Wall (25)",
+				"position": {
+					"x": -1065.175,
+					"y": -150.13,
+					"z": -243.15
+				},
+				"rotation": {
+					"x": 290.2473,
+					"y": 277.0108,
+					"z": 107
+
+				},
+				"rename": "RecorderFlare_2"
+			},
+			{
+				"path": "DB_VesselDimension_Body/Sector_VesselDimension/Interactables_VesselDimension/UNSORTED/Prefab_NOM_Lamp_Glow_Vessel_Wall (25)",
+				"position": {
+					"x": -1065.175,
+					"y": -152.13,
+					"z": -250
+				},
+
+				"rename": "RecorderFlare_3"
+			},
+			{
+				"path": "DB_VesselDimension_Body/Sector_VesselDimension/Interactables_VesselDimension/UNSORTED/Prefab_NOM_Lamp_Glow_Vessel_Wall (25)",
+				"position": {
+					"x": -1070.175,
+					"y": -152.13,
+					"z": -253
+				},
+				"rename": "RecorderFlare_4"
 			}
 		],
 		"signals": [
@@ -210,6 +253,21 @@
 				"type": "preCrashRecorder",
 				"rename": "Recorder_Essence_1"
 
+			},
+			{
+				"position": {
+					"x": -1065.175,
+					"y": -158.13,
+					"z": -243.15
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 90
+				},
+				"xmlFile": "planets/Text/Recorder_PRE_Essence.xml",
+				"type": "preCrashRecorder",
+				"rename": "Recorder_PRE_Essence"
 			},
 			{
 				"position": {

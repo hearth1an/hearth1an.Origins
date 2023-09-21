@@ -79,6 +79,7 @@ namespace Origins.Components.Scripts
                 {
                     SearchUtilities.Find("Hazard_Core").SetActive(false);
                     SearchUtilities.Find("CoreDimension_Body/Sector/Core/FourthInteractionTrigger").SetActive(true);
+                    SearchUtilities.Find("CoreDimension_Body/Sector/Core/FourthInteractionTrigger").GetComponent<SphereCollider>().enabled = true;
                 }
                 else
                 {

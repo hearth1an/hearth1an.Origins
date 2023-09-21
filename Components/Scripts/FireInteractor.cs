@@ -22,7 +22,7 @@ namespace Origins.Components.Scripts
         {
             _interactVolume = this.GetRequiredComponent<SingleInteractionVolume>();
             _interactVolume._textID = UITextType.LightCampfirePrompt;
-            _interactVolume._resetInteractionTime = 16f;
+            _interactVolume._resetInteractionTime = 26f;
             _interactVolume.OnPressInteract += OnPressInteract;
             _interactVolume.OnGainFocus += OnGainFocus;
             _campfireInteractReciever = SearchUtilities.Find("CaveDimension_Body/Sector/CaveCampfire/AttachPoint").GetComponent<InteractReceiver>();
@@ -109,7 +109,7 @@ namespace Origins.Components.Scripts
             PlayerEffectController.PlayAudioOneShot(AudioType.Artifact_Light, 0.5f);
             PlayerEffectController.PlayAudioOneShot(AudioType.DreamFire_Crackling_Loop, 0.5f);
 
-            Invoke("DisableFlames", 15f);
+            Invoke("DisableFlames", 25f);
         }
 
         private void DisableFlames()

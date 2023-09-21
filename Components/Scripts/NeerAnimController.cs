@@ -37,13 +37,15 @@ namespace Origins.Components.Scripts
 
         public void OnDialogueStart()
         {
+            PlayerData._settingsSave.freezeTimeWhileReadingConversations = false;
+
             animator.SetBool("IsDialogueStarted", true);
             PlayerEffectController.Blink(0.5f);
             Invoke("AfterBlink", 0.5f);            
             neerAudioSource.PlayOneShot(kneeFoley);
+
             
 
-            PlayerData.GetFreezeTimeWhileReadingConversations();
             
         }
 

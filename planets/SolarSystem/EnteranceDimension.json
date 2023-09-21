@@ -141,7 +141,7 @@
 		"details": [
 			{
 				"path": "DB_EscapePodDimension_Body/Sector_EscapePodDimension/Sector_EscapePodBody/Geometry_EscapePodBody",
-				"keepLoaded": true,
+				//"keepLoaded": true,
 				"position": {
 					"x": -198.0026,
 					"y": -149.997559,

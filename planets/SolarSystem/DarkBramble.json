@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
 	"name": "DARK_BRAMBLE",
-	"removeChildren": [],
+
 	"Base": {
 		"gravityFallOff": "linear"
 	},
@@ -10,7 +10,7 @@
 			{
 				"linksTo": "EnteranceDimension",
 				"name": "To_Enterance_Node",
-				
+
 				"fogTint": {
 					"r": 83,
 					"g": 129,
@@ -32,8 +32,35 @@
 					"x": 0,
 					"y": 0,
 					"z": 0
-				},				
+				},
 				"scale": 2.7
+			},
+			{
+				"linksTo": "HeartDimensionSmall",
+				"name": "Exit_Node",
+				"possibleExits": [1],
+				"fogTint": {
+					"r": 83,
+					"g": 129,
+					"b": 255,
+					"a": 0
+				},
+				"lightTint": {
+					"r": 83,
+					"g": 129,
+					"b": 255,
+					"a": 0
+				},
+				"rotation": {
+					"x": 360,
+					"y": 0,
+					"z": 55
+				},
+				"position": {
+					"x": 0,
+					"y": 1200,
+					"z": 200
+				}
 			}
 		]
 	},
@@ -56,5 +83,6 @@
 	},
 	"ReferenceFrame": {},
 	"ShipLog": {},
-	"ShockEffect": {}
+	"ShockEffect": {},
+	"removeChildren": [ "Sector_DB/Exit_Node", "Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere" ]
 }

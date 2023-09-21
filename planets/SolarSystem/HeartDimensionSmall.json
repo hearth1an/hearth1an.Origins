@@ -16,7 +16,7 @@
 
 			},
 			"fogDensity": 4.0,
-			"linksTo": "To_Enterance_Node",
+			"linksTo": "Exit_Node",
 			"allowedEntrances": [ 0 ],
 			"radius": 30.0,
 			"vinePrefab": "none"
@@ -42,8 +42,8 @@
 					"z": 180
 				},
 				"rename": "heart",
-				"scale": 50,
-				"keepLoaded": true
+				"scale": 50
+				//"keepLoaded": true
 			},
 			{
 				"assetBundle": "planets/Assets/heart_dimension",
@@ -58,8 +58,8 @@
 					"y": 103.7373,
 					"z": 180
 				},
-				"rename": "HeartItem",
-				"keepLoaded": true
+				"rename": "HeartItem"
+				//"keepLoaded": true
 			},
 			{
 				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/GravityCrystals/OtherComponentsGroup/Prefab_NOM_GravityCrystal",
