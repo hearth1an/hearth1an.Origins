@@ -139,6 +139,7 @@ namespace Origins.Components
             //SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").SetActive(false);
             SearchUtilities.Find("HeartDimensionSmall_Body/Sector/BrambleCrash_SFX").SetActive(false);
 
+
             /*
             var essenceSignal_1 = SearchUtilities.Find("CoreDimension_Body/Sector/Essence_Signal_1");
             var essenceSignal_2 = SearchUtilities.Find("CoreDimension_Body/Sector/Essence_Signal_2");
@@ -155,8 +156,9 @@ namespace Origins.Components
             essenceSignal_1.transform.localScale = new Vector3(1, 1, 1);
             essenceSignal_2.transform.localScale = new Vector3(1, 1, 1);
             essenceSignal_3.transform.localScale = new Vector3(1, 1, 1);
-           
-            
+            */
+
+            SearchUtilities.Find("HeartDimensionSmall_Body/Sector/BrambleCrash_SFX").SetActive(false);
             SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/Node_QM/Essence_Signal_1").SetActive(false);
             SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/Node_QM/Essence_Signal_2").SetActive(false);
             SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_DB/Interactables_DBState/Node_QM/Essence_Signal_3").SetActive(false);
@@ -174,7 +176,6 @@ namespace Origins.Components
             SearchUtilities.Find("DarkNestDimension_Body/Sector/DarkNest_To_Core_Node/Essence_Signal_2").SetActive(false);
             SearchUtilities.Find("DarkNestDimension_Body/Sector/DarkNest_To_Core_Node/Essence_Signal_3").SetActive(false);
             SearchUtilities.Find("DarkBramble_Body/Sector_DB/To_Enterance_Node/Effects/InnerWarpFogSphere").SetActive(false);
-             */
 
 
         }
