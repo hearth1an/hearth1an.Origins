@@ -16,6 +16,12 @@ Author:
 # Voice by:
 - Music Turtle
 
+# Translations:
+- Russian by Tofu & [hearth1an](https://github.com/hearth1an) 
+- Japanese by Yakamoto & [orclecle](https://github.com/TRSasasusu)
+- French by [Terofale](https://github.com/iAsure)
+- Spanish by [iAsure](https://github.com/iAsure)
+
 # Did some help:
 - GameWyrm
 - John Corby
