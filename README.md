@@ -1,13 +1,13 @@
-Outer Wilds - Origins (unofficial story mod made for modding jam on july 2023) 
+Outer Wilds - Origins (unofficial story mod made for modding jam on July 2023) 
 
 ![origins gif final](https://github.com/hearth1an/hearth1an.Origins/assets/106444732/9c5dc66c-a0e9-4bf8-bdad-861cbb629928)
 
-Works only on PC and compitable with both flat version and VR ([NomaiVR](https://outerwildsmods.com/mods/nomaivr)).
+Works only on PC and is compatible with both flat version and VR ([NomaiVR](https://outerwildsmods.com/mods/nomaivr)).
 
 Join the [Outer Wilds Modding Discord](https://discord.gg/MvbCbBz6Q6) if you have any questions or just want to chat about modding.
 
 # Warning!
-This mod contains major spoilers for Outer Wilds original game and Echoes Of the Eye DLC. Make sure you have beaten both before start this mod.
+This mod contains major spoilers for Outer Wilds original game and Echoes Of the Eye DLC. Make sure you have beaten both before starting this mod.
 
 # Credits
 Author:
@@ -19,7 +19,7 @@ Author:
 # Translations:
 - Russian by Tofu & [hearth1an](https://github.com/hearth1an) 
 - Japanese by Yakamoto & [orclecle](https://github.com/TRSasasusu)
-- French by [Terofale](https://github.com/iAsure)
+- French by [Terofale](https://github.com/Terofale)
 - Spanish by [iAsure](https://github.com/iAsure)
 
 # Did some help:
